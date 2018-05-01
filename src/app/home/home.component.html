@@ -1,0 +1,8 @@
+<h3>Home</h3>
+
+<div>
+    <a *ngFor="let project of projects"
+        routerLink="/projects/{{project.id}}">
+        <h3>{{ project.title | uppercase }}</h3>
+    </a>
+</div>

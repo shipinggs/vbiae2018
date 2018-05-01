@@ -1,0 +1,12 @@
+<div class="project" *ngIf="project">
+
+    <h3>{{ project.title | uppercase }}</h3>
+    <p>By {{ project.creator }}</p>
+    <label>Description:
+        <input [(ngModel)]="project.title" placeholder="title">
+    </label>
+
+    <div>
+        <button (click)="goBack()">Back</button>
+    </div>
+</div>
