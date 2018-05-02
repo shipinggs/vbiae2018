@@ -3,35 +3,26 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h1>Commissioners</h1>
+            <h1 class="mb-4">Co-Commissioners and Curators</h1>
         </div>
     </div>
             
-    <div class="about__commissioner row" *ngFor="let commissioner of commissioners">
+    <div class="about__commissioner row mb-5" *ngFor="let commissioner of commissioners">
         <div class="col-sm-9">
             <img class="about__commissioner-image" src={{commissioner.imageUrl}} alt="">
         </div>
         <div class="col-sm-12">
-            <h2>{{ commissioner.name }}</h2>
-            <p class="font-italic font-weight-light">{{ commissioner.title }}</p>
+            <h2 class="mt-3 mb-3">{{ commissioner.name }}, {{ commissioner.title }}</h2>
             <p class="multi-lines-text">{{ commissioner.text }}</p>
         </div>
-        
     </div>
 
-    <div class="row mt-5">
-        <div class="col-md-12">
-            <h1>Curators</h1>
-        </div>
-    </div>
-
-    <div class="curators__curator row" *ngFor="let curator of curators">
+    <div class="about__curator row" *ngFor="let curator of curators">
         <div class="col-6 col-sm-3">
-            <img class="curators__curator-image" src={{curator.imageUrl}} alt="">
+            <img class="about__curator-image" src={{curator.imageUrl}} alt="">
         </div>
         <div class="col-sm-9">
-            <h2>{{ curator.name }}</h2>
-            <p class="font-italic font-weight-light">{{ curator.title }}</p>
+            <h2 class="mb-3">{{ curator.name }}, {{ curator.title }}</h2>
             <p class="multi-lines-text">{{ curator.text }}</p>
         </div>
         

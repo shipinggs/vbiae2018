@@ -13,10 +13,8 @@
     height: 100%;
 }
 
-.project-detail__title {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
-    font-weight: lighter;
+.project-detail__header-image {
+    margin: 0 auto;
 }
 
 .see-others-btn {

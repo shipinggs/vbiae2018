@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { SingaporeContact } from '../singapore-contact';
+import { InternationalContact } from '../international-contact';
+
+import { ContactService } from '../contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  private singaporeContacts: SingaporeContact[];
+  private internationalContacts: InternationalContact[];
+
+  constructor(private contactService: ContactService) { }
 
   ngOnInit() {
+    this.getContacts()
   }
 
+  getContacts(): void {
+    this.contactService.getSingaporeContacts()
+      .subscribe(contacts => this.singaporeContacts = contacts);
+    this.contactService.getInternationalContacts()
+      .subscribe(contacts => this.internationalContacts = contacts);  
+
+  }
 }

@@ -7,8 +7,10 @@ export class Project {
     type: string;
     client: string;
     quote: string;
+    subquote: string;
     description: string;
     atmosphericUrl: string;
     imagePath: string;
+    headerImage: string;
     images: any;
 }

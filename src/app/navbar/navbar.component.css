@@ -4,7 +4,7 @@
 }
 .navbar-brand-logo {
     margin: 0 auto;
-    width: 120px;
+    width: 90px;
     transition: 0.5s ease;
 }
 @media only screen and (max-width: 768px) {
@@ -23,7 +23,21 @@
     margin: 0 10px;
     color: #6F6F6F;
     font-weight: lighter;
+    font-size: 0.8em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .nav-link.nav-item:hover {
     color: #0A0A0A;
+}
+
+.navbar-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+    color: #6F6F6F;
+    font-size: 0.8em;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-text {
+        display: none;
+    }
 }

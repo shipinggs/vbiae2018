@@ -14,7 +14,7 @@ import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { PavillionComponent } from './pavillion/pavillion.component';
+import { PavilionComponent } from './pavilion/pavilion.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
 import { AboutService } from './about.service';
@@ -23,6 +23,7 @@ import { ProjectMinisComponent } from './project-minis/project-minis.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HomeCarouselService } from './home-carousel.service';
+import { ContactService } from './contact.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { HomeCarouselService } from './home-carousel.service';
     MessagesComponent,
     HomeComponent,
     AboutComponent,
-    PavillionComponent,
+    PavilionComponent,
     ContactComponent,
     EventsComponent,
     ProjectMinisComponent,
@@ -52,6 +53,7 @@ import { HomeCarouselService } from './home-carousel.service';
     AboutService,
     ProjectMiniService,
     HomeCarouselService,
+    ContactService,
   ],
   bootstrap: [AppComponent]
 })

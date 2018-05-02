@@ -6,14 +6,17 @@
                 <iframe width="560" height="315" [src]="getInterviewUrl()"
                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>        
             </div> -->
-        
-            <h1 class="project-detail__title">{{ project.title }}</h1>
-            <p class="font-italic">{{ project.creator }}</p>
             
-            <h2>{{ project.quote }}</h2>
+            <img class="project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
+
+            <h2 class="mt-5 mb-5 font-weight-bold">{{ project.quote }}</h2>
+
+            <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
+            <p class="mb-5 font-weight-light multi-lines-text">By {{ project.creator }}</p>
+            
             <p>{{ project.description }}</p>
-            <p>Type: {{ project.type }}</p>
-            <p>Client: {{ project.client }}</p>
+            <h5 class="mt-5" *ngIf="project.type">Type: {{ project.type }}</h5>
+            <h5 *ngIf="project.client">Client: {{ project.client }}</h5>
             
             <div *ngFor="let image of project.images">
                 <img class="project-detail__image" src={{project.imagePath}}{{image}} />

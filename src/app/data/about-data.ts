@@ -17,25 +17,25 @@ export const COMMISSIONERS: Curator[] = [
 
 export const CURATORS: Curator[] = [
     {
-        name: "Erwin Viray",
+        name: "Prof. Erwin Viray",
         title: "Lead Curator",
         imageUrl: "/assets/about/ev.jpg",
         text: "Professor Erwin Viray is the Head of Pillar of Architecture and Sustainable Design in Singapore University of Technology and Design (SUTD). He was Global Excellence Professor at Kyoto Institute of Technology and Head of the Graduate School of Architecture and Design in 2012 for two years. In addition, he holds several professional leadership roles including Chief Communications Officer for the Kyoto Design Lab and a member of the Singapore President’s Design Awards jury since 2012 and the Chair of the jury since 2013. He is also an Award Ambassador for the LafargeHolcim Awards in Asia Pacific, a jury chair of archiprixSEA 2012 and 2016, a member of management board the TOTO Gallery MA, an Advisory Council member for the Barcelona Institute of Architecture. He has been Editor of the influential magazine, a+u (Architecture + Urbanism) since 1996."
     },
     {
-        name: "Ho Puay-Peng",
+        name: "Prof. Ho Puay-Peng",
         title: "Curatorial Collaborator",
         imageUrl: "/assets/about/hpp.jpg",
         text: "Professor Puay-peng Ho is Head of Department of Architecture, School of Design and Environment, National University of Singapore. Prior to joining NUS, he was Professor of Architecture and served as Director of School of Architecture and University Dean of Students at The Chinese University of Hong Kong. He received Master of Art in Architectural Studies (First Class Honours) and Diploma of Architecture from the University of Edinburgh, and practiced architecture in Edinburgh and Singapore. Subsequently, Puay-peng took up PhD research at the School of Oriental and African Studies at the University of London.  In the last 25 years, he has researched and published in the areas of Buddhist art and architecture, Chinese architectural history, vernacular architecture and history of modern architecture in China and Hong Kong.\n\nHe was conservation consultant, architect and adviser to some 100 conservation projects in Hong Kong, ranging from PMQ, Haw Par Villa, Comix Homebase, Oil Street Art Space, Court of Final Appeal, Former French Mission Building to New Campus for Chicago University Booth School. He was also appointed to many public and private boards and committee, including as Chairman of the Lord Wilson Heritage Trust, member of Town Planning Board, Antiquities Advisory Board, Housing Authority. He was appointed Justice of the Peace by Hong Kong SAR Government. Currently, he has been appointed as a Patron of International Dunhuang Project, British Library."
     },
     {
-        name: "Chong Keng Hua",
+        name: "Dr. Chong Keng Hua",
         title: "Curator",
         imageUrl: "/assets/about/ckh.jpg",
-        text: "Professor Puay-peng Ho is currently Head of Department of Architecture, School of Design and Environment, National University of Singapore. Prior to joining NUS, Ho was Professor of Architecture and served as Director of School of Architecture and University Dean of Students at The Chinese University of Hong Kong. He received Master of Art in Architectural Studies (First Class Honours) and Diploma of Architecture from the University of Edinburgh, and practiced architecture in Edinburgh and Singapore. Subsequently, Puay-peng Ho took up PhD research at the School of Oriental and African Studies at the University of London.  In the last 25 years, Puay-peng Ho researched and published in the areas of Buddhist art and architecture, Chinese architectural history, vernacular architecture and history of modern architecture in China and Hong Kong. He was conservation consultant, architect and adviser to some 100 conservation projects in Hong Kong, ranging from PMQ, Haw Par Villa, Comix Homebase, Oil Street Art Space, Court of Final Appeal, Former French Mission Building to New Campus for Chicago University Booth School. Puay-peng Ho was also appointed to many public and private boards and committee, including as Chairman of the Lord Wilson Heritage Trust, member of Town Planning Board, Antiquities Advisory Board, Housing Authority. He was appointed Justice of the Peace by Hong Kong SAR Government. Currently, Professor Ho is appointed as a Patron of International Dunhuang Project, British Library."
+        text: "Graduated with PhD in Architecture, Dr Keng Hua Chong is an Assistant Professor of Architecture and Sustainable Design at the Singapore University of Technology and Design (SUTD), where he leads the Social Urban Research Group (SURGe) and co-leads the Opportunity Lab (O-Lab). He is also the partner of COLOURS: Collectively Ours. Co-author of Second Beginnings: Senior Living Redefined (2018), and Creative Ageing Cities: Place Design with Older People in Asian Cities (2018), he is currently leading various research and design projects related to ageing, social architecture, and participatory community design across Asia. He was curator for the Singapore Pavilion at the Seoul Biennale of Architecture and Urbanism 2017."
     },
     {
-        name: "Jason Lim Tech Chye",
+        name: "Dr. Jason Lim Teck Chye",
         title: "Curator and Exhibition Designer",
         imageUrl: "/assets/about/jl.jpg",
         text: "Jason Lim is an Adjunct Assistant Professor at SUTD and director of TakahashiLim A + D, a design consultancy based in Singapore. He received a doctorate from ETH Zurich, completing his dissertation at Gramazio Kohler Research. He also holds a Master of Engineering degree from the Stevens Institute of Technology, as well as a Bachelor of Architecture degree from Cornell University.\n\nHe worked previously as a PhD researcher at the Future Cities Lab in the Singapore-ETH centre, and as an architectural designer at BriggsKnowles Architecture + Design in New York City. In addition, he has taught at Parsons the New School for Design, Stevens Institute of Technology, and the National University of Singapore."
@@ -48,7 +48,7 @@ export const CURATORS: Curator[] = [
     },
     {
         name: "Wu Yen Yen",
-        title: "Curator",
+        title: "Curator and Exhibition Designer",
         imageUrl: "/assets/about/wyy.jpg",
         text: "Yen Yen Wu is a registered Architect practising in Singapore and Principal of Genome Architects. She received her Bachelor of Arts (Architectural Studies) from National University of Singapore, and Master of Architecture from Columbia University Graduate School of Architecture, Planning and Preservation (GSAPP) in 2003. She had worked on a number of local residential and commercial to larger-scaled hospitality projects in Asia and the Middle East before starting Genome Architects in 2009. Genome Architects has a portfolio of local private and several key public projects, premised on her interest in approaching design through understanding natural systems. She is also Adjunct Tutor at National University of Singapore, School of Architecture, and is a Council Member of Singapore Institute of Architects."
     }

@@ -1,33 +1,43 @@
 /* Application-wide Styles */
-h1 {
-    color: #626262;
+p, span, em {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 2.5em;
-    font-weight: lighter;
+    font-size: 1em;
 }
-h2 {
-    color: #696969;
-    font-family: Helvetica, Arial, sans-serif;
+h1 {
+    color: #363636;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.8em;
     font-weight: lighter;
 }
+h2 {
+    color: #545454;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
 h3 {
-    color: #6D6D6D;
-    font-family: Helvetica, Arial, sans-serif;
+    color: #636363;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
 }
 h4 {
     color: #6D6D6D;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+h5 {
+    color: #727272;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: lighter;
 }
 html {
     height: 100%;
 }
 body {
-    padding-top: 105px;
+    padding-top: 85px;
     height: 100%;
     color: #555555;
     background-color: #F7F7F7;
@@ -46,10 +56,6 @@ img {
 }
 .container {
     margin: 36px auto;
-}
-/* everywhere else */
-* {
-    font-family: Helvetica, Arial, sans-serif;
 }
 .multi-lines-text {
     white-space: pre-line;
