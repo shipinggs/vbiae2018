@@ -1,9 +1,1 @@
-<h2>Featured Projects</h2>
-<ul class="featured-projects">
-    <li *ngFor="let project of projects">
-        <a routerLink="/projects/{{project.id}}">
-            <h3>{{ project.title | uppercase }}</h3>
-            <p>By {{ project.creator }}</p>
-        </a>
-    </li>
-</ul>
+<app-project-minis></app-project-minis>

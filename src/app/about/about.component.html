@@ -1,0 +1,22 @@
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>About</h1>
+        </div>
+    </div>
+            
+
+    <div class="curators__curator row" *ngFor="let curator of curators">
+        <div class=col-sm-3>
+            <img class="curators__curator-image" src={{curator.imageUrl}} alt="">
+        </div>
+        <div class=col-sm-9>
+            <h2>{{ curator.name }}</h2>
+            <p class="font-italic font-weight-light">{{ curator.title }}</p>
+            <p>{{ curator.text }}</p>
+        </div>
+        
+    </div>
+</div>

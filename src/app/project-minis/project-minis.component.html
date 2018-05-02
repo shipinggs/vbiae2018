@@ -1,0 +1,21 @@
+<div class="project-minis__container container">
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Featured Projects</h1>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="project-mini col-lg-3 col-md-4"
+    *ngFor="let projectMini of projectMinis">
+      <a class="project-mini__link" routerLink={{projectMini.projectUrl}}>
+        <img class="project-mini__image" src={{projectMini.imagePath}} alt="">
+        <div class="project-mini__title-container">
+          <h4 class="project-mini__title">{{projectMini.title}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</div>

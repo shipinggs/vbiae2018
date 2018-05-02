@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HostListener, Inject } from "@angular/core";
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'No More Free Space';
+  public isCollapsed = true;
+  
 }

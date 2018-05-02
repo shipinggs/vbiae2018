@@ -17,8 +17,8 @@ export class ProjectService {
     return of(PROJECTS);
   }
 
-  getProject(id: number): Observable<Project> {
-    this.messageService.add('fetched project with id' + id);
-    return of(PROJECTS.find(project => project.id === id))
+  getProject(tag: string): Observable<Project> {
+    this.messageService.add('fetched project with tag ' + tag);
+    return of(PROJECTS.find(project => project.tag === tag))
   }
 }

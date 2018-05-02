@@ -1,0 +1,29 @@
+.navbar {
+    background-color: white;
+    transition: 0.5s ease;
+}
+.navbar-brand-logo {
+    margin: 0 auto;
+    width: 120px;
+    transition: 0.5s ease;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-brand-logo {
+        width: 50px;
+    }
+}
+.navbar-brand-logo.scrolled {
+    width: 50px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+.nav-link.nav-item {
+    margin: 0 10px;
+    color: #6F6F6F;
+    font-weight: lighter;
+}
+.nav-link.nav-item:hover {
+    color: #0A0A0A;
+}

@@ -1,19 +1,53 @@
 /* Application-wide Styles */
 h1 {
-    color: #545454;
-    font-family: Arial, Helvetica, sans-serif;
-}
-h2, h3 {
-    color: #686868;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #626262;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2.5em;
     font-weight: lighter;
 }
-
-body, button {
+h2 {
+    color: #696969;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: lighter;
+}
+h3 {
+    color: #6D6D6D;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+h4 {
+    color: #6D6D6D;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+}
+html {
+    height: 100%;
+}
+body {
+    padding-top: 105px;
+    height: 100%;
     color: #555555;
     background-color: #F7F7F7;
 }
+@media only screen and (max-width: 768px) {
+    body {
+        padding-top: 59px;
+    }
+}
+img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 20px auto;
+}
+.container {
+    margin: 36px auto;
+}
 /* everywhere else */
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }

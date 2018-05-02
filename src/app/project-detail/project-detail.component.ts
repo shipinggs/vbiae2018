@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
@@ -18,18 +19,26 @@ export class ProjectDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private projectService: ProjectService,
-    private location: Location
+    private location: Location,
+    private sanitizer: DomSanitizer
   ) { }
 
   ngOnInit() {
     this.getProject();
   }
   getProject(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.projectService.getProject(id)
-      .subscribe(project => this.project = project);
+    const tag = this.route.snapshot.paramMap.get('tag');
+    this.projectService.getProject(tag)
+      .subscribe(project => {
+        this.project = project;
+      });
+  }
+  
+  getInterviewUrl() {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(this.project.interviewUrl);
   }
 
+  // remove when ready
   goBack(): void {
     this.location.back()
   }
