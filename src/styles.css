@@ -51,3 +51,6 @@ img {
 * {
     font-family: Helvetica, Arial, sans-serif;
 }
+.multi-lines-text {
+    white-space: pre-line;
+}
