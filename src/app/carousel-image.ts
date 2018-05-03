@@ -1,4 +1,4 @@
-export class CarouselSlide {
+export class CarouselImage {
     id: number;
     title: string;
     creator: string;

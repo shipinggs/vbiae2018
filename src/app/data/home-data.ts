@@ -1,5 +1,5 @@
 import { ProjectMini } from '../project-mini';
-import { CarouselSlide } from '../carousel-slide';
+import { CarouselImage } from '../carousel-image';
 
 export const PROJECT_MINIS: ProjectMini[] = [
     {
@@ -100,7 +100,7 @@ export const PROJECT_MINIS: ProjectMini[] = [
     }
 ]
 
-export const CAROUSEL_SLIDES: CarouselSlide[] = [
+export const CAROUSEL_IMAGES: CarouselImage[] = [
     {
         id: 1,
         title: "Pavilion",
@@ -111,19 +111,11 @@ export const CAROUSEL_SLIDES: CarouselSlide[] = [
     },
     {
         id: 2,
-        title: "Marina Bay",
+        title: "Lockup",
         creator: "",
         description: "",
         redirectUrl: "",
-        imagePath: "/assets/home-carousel/02.jpg"
-    },
-    {
-        id: 3,
-        title: "Library @ Orchard",
-        creator: "",
-        description: "",
-        redirectUrl: "",
-        imagePath: "/assets/home-carousel/03.jpg/"
+        imagePath: "/assets/home-carousel/lockup-light.png"
     }
 ]
 

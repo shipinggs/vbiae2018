@@ -11,8 +11,8 @@ import { ContactService } from '../contact.service';
 })
 export class ContactComponent implements OnInit {
 
-  private singaporeContacts: SingaporeContact[];
-  private internationalContacts: InternationalContact[];
+  singaporeContacts: SingaporeContact[];
+  internationalContacts: InternationalContact[];
 
   constructor(private contactService: ContactService) { }
 

@@ -1,14 +1,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>{{ pavilion.title }}</h1>
+            <img  class="pavilion__header-image" src={{pavilion.imagePath}}{{pavilion.headerImage}} alt="">
+            <h1 class="mt-3">{{ pavilion.title }}</h1>
         </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6 pavilion__image" *ngFor="let image of pavilion.images">
-            <img src={{pavilion.imagePath}}{{image}} alt="">
-        </div>           
     </div>
 
     <div class="row">
@@ -19,3 +14,6 @@
         </div>
     </div>
 </div>
+
+<app-gallery [imagePath]="pavilion.imagePath" [images]="pavilion.images"
+[width]="galleryWidth" [height]="galleryHeight" imageSize="contain"></app-gallery>

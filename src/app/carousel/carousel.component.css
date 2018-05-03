@@ -1,3 +1,40 @@
-.carousel-slide__image {
+.carousel__container img {
     margin: 0 auto;
+}
+
+.carousel__banner {
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel__lockup {
+    padding-top: 6px;
+    float: right;
+    width: 76%;
+}
+@media only screen and (max-width: 992px) {
+    .carousel__banner {
+    }
+    .carousel__lockup {
+        width: 82%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .carousel__banner {
+        height: 500px;
+    }
+    .carousel__lockup {
+        /* position: absolute;
+        top: 100%;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 92%;
+        transform: translate(0,-102%); */
+
+        float: none;
+        width: 96%;
+    }
 }

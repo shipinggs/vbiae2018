@@ -9,7 +9,7 @@
 }
 @media only screen and (max-width: 768px) {
     .navbar-brand-logo {
-        width: 50px;
+        width: 80px;
     }
 }
 .navbar-brand-logo.scrolled {

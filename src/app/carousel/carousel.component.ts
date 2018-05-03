@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { map } from 'rxjs/operators';
-import { CarouselSlide } from '../carousel-slide';
+import { CarouselImage } from '../carousel-image';
 import { HomeCarouselService } from '../home-carousel.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { HomeCarouselService } from '../home-carousel.service';
 })
 export class CarouselComponent implements OnInit {
 
-  carouselSlides: CarouselSlide[];
+  carouselSlides: CarouselImage[];
 
   constructor(private homeCarouselService: HomeCarouselService) {}
 

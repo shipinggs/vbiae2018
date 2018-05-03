@@ -15,6 +15,8 @@ import { ProjectService }  from '../project.service';
 export class ProjectDetailComponent implements OnInit {
 
   @Input() project: Project;
+  galleryWidth: string = "600px";
+  galleryHeight: string = "750px";
 
   constructor(
     private route: ActivatedRoute,

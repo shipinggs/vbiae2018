@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -24,6 +25,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { HomeCarouselService } from './home-carousel.service';
 import { ContactService } from './contact.service';
+import { GalleryComponent } from './gallery/gallery.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,9 @@ import { ContactService } from './contact.service';
     EventsComponent,
     ProjectMinisComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    GalleryComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -46,6 +51,7 @@ import { ContactService } from './contact.service';
     AppRoutingModule,
     NgbModule.forRoot(),
     HttpClientModule,
+    NgxGalleryModule
    ],
   providers: [
     ProjectService,

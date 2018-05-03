@@ -11,6 +11,8 @@ import { ProjectService } from '../project.service';
 export class PavilionComponent implements OnInit {
 
   pavilion: Project;
+  galleryWidth: string = "100%";
+  galleryHeight: string = "750px";
 
   constructor(private projectService: ProjectService) { }
 
@@ -21,6 +23,7 @@ export class PavilionComponent implements OnInit {
   getPavilion(): void {
     this.projectService.getPavilion()
       .subscribe(pavilion => this.pavilion = pavilion);
+      
   }
 
 }
