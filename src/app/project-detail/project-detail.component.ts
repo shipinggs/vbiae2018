@@ -5,6 +5,8 @@ import { Location } from '@angular/common';
 
 import { Project } from '../project';
 import { ProjectService }  from '../project.service';
+import { Conversation } from '../conversation';
+import { ConversationService } from '../conversation.service';
 import { EmbedVideoService } from 'ngx-embed-video';
 
 @Component({
@@ -14,7 +16,8 @@ import { EmbedVideoService } from 'ngx-embed-video';
 })
 export class ProjectDetailComponent implements OnInit {
 
-  @Input() project: Project;
+  project: Project;
+  conversation: Conversation;
   galleryWidth: string = "600px";
   galleryHeight: string = "750px";
 
@@ -29,6 +32,7 @@ export class ProjectDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private projectService: ProjectService,
+    private conversationService: ConversationService,
     private location: Location,
     private embedService: EmbedVideoService
   ) {  }
@@ -48,11 +52,14 @@ export class ProjectDetailComponent implements OnInit {
         this.left_iframe_html = this.embedService.embed(this.atmosphericLeftUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
         this.right_iframe_html = this.embedService.embed(this.atmosphericRightUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
       });
+    this.conversationService.getConversation(tag)
+      .subscribe(conversation => {
+        this.conversation = conversation;
+      });
   }
 
   // remove when ready
   goBack(): void {
     this.location.back()
   }
-
 }

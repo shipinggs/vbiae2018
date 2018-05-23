@@ -13,8 +13,6 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 import { ProjectService } from './project.service';
-import { MessagesComponent } from './messages/messages.component';
-import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
@@ -30,13 +28,13 @@ import { HomeCarouselService } from './home-carousel.service';
 import { ContactService } from './contact.service';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
+import { ConversationService } from './conversation.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsComponent,
     ProjectDetailComponent,
-    MessagesComponent,
     HomeComponent,
     AboutComponent,
     PavilionComponent,
@@ -61,11 +59,11 @@ import { FooterComponent } from './footer/footer.component';
    ],
   providers: [
     ProjectService,
-    MessageService,
     AboutService,
     ProjectMiniService,
     HomeCarouselService,
     ContactService,
+    ConversationService,
   ],
   bootstrap: [AppComponent]
 })

@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" *ngIf="project">
     <div class="row">
-        <div class="project-detail col-md-12" *ngIf="project">
+        <div class="col-md-12">
             
             <div class="project-detail__interview-video-wrapper" [innerHtml]="interview_iframe_html"></div>
         
@@ -9,19 +9,33 @@
             <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
             <p class="mb-5 font-weight-light multi-lines-text">By {{ project.creator }}</p>
             
-            <img class="mt-5 mb-5 project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
-
             <p>{{ project.description }}</p>
             <h5 class="mt-5" *ngIf="project.type">Type: {{ project.type }}</h5>
             <h5 *ngIf="project.client">Client: {{ project.client }}</h5>              
+
+            <img class="mt-5 project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
+        </div>
+    </div>
+    <div class="row project-conversation mt-5">
+        <div class="col-md-12">
+            <h2 class="project-conversation__title font-weight-light text-center mb-5">Conversations</h2>
+            <p class="project-conversation__party font-weight-bold" *ngFor="let party of conversation.parties">
+                <span>{{ party[0] }}_ </span><span class="text-green">{{ party[1] }}</span>
+            </p>
+            <div class="project-conversation__segment mt-5" *ngFor="let segment of conversation.conversation">
+                <h2 class="project-conversation__segment-header font-weight-bold mb-3">"<span class="text-green">{{segment.heading | uppercase }}</span>"</h2>
+                <p *ngFor="let line of segment.speech">
+                    <span class="text-green font-weight-bold">{{line[0] | uppercase }}</span> {{line[1]}}
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
-<app-gallery [imagePath]="project.imagePath" [images]="project.images"
+<app-gallery *ngIf="project" [imagePath]="project.imagePath" [images]="project.images"
 [width]="galleryWidth" [height]="galleryHeight"></app-gallery>
 
-<div class="container">
+<div class="container" *ngIf="project">
     <div class="row mt-5">
         <div class="col-md-12 text-center">
             <h2 class="font-weight-light">Atmospheric Videos</h2>
