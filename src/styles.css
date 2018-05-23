@@ -1,50 +1,59 @@
 /* Application-wide Styles */
 p, span, em {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 1em;
 }
 h1 {
     color: #363636;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.8em;
-    font-weight: lighter;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 h2 {
     color: #545454;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.5em;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
+    font-size: 1.3em;
     font-weight: lighter;
 }
 h3 {
     color: #636363;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu', Tahoma, sans-serif;
     font-size: 1.2em;
     font-weight: lighter;
 }
 h4 {
     color: #6D6D6D;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 0.9em;
-    font-weight: lighter;
+    font-weight: 400;
 }
 h5 {
     color: #727272;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     font-size: 0.9em;
     font-weight: lighter;
+}
+.text-green {
+    color:#44d62c
+}
+.text-red {
+    color: #d62d20;
+}
+.text-blue {
+    color: #0057e7;
 }
 html {
     height: 100%;
 }
 body {
-    padding-top: 85px;
+    padding-top: 94px;
     height: 100%;
     color: #555555;
     background-color: #F7F7F7;
 }
 @media only screen and (max-width: 768px) {
     body {
-        padding-top: 79px;
+        padding-top: 59px;
     }
 }
 img {

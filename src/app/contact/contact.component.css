@@ -1,0 +1,8 @@
+.contact__email-address {
+    color: #d62d20;
+    text-decoration: none;
+}
+
+.contact__email-address:hover {
+    color: #861003
+}

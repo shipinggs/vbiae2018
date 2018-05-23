@@ -1,5 +1,7 @@
-.carousel__container img {
-    margin: 0 auto;
+.carousel__container {
+    position: relative;
+    background: black;
+    overflow: hidden;
 }
 
 .carousel__banner {
@@ -7,17 +9,22 @@
     height: 600px;
     background-size: cover;
     background-position: center center;
+    animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s sizeToFit;
 }
 .carousel__lockup {
+    position: absolute;
+    margin: 0 auto;
     padding-top: 6px;
-    float: right;
-    width: 76%;
+    top: 0;
+    right: 0;
+    width: 74%;
+    animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s slideInFromTop;
 }
 @media only screen and (max-width: 992px) {
     .carousel__banner {
     }
     .carousel__lockup {
-        width: 82%;
+        width: 84%;
     }
 }
 
@@ -26,15 +33,38 @@
         height: 500px;
     }
     .carousel__lockup {
-        /* position: absolute;
-        top: 100%;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 92%;
-        transform: translate(0,-102%); */
-
-        float: none;
         width: 96%;
+        top: 1%;
+        left: 0;
+    }
+}
+
+@keyframes sizeToFit {
+    0% {
+        transform: scale(1.05);
+        opacity: 0;
+    }
+    10% {
+        transform: scale(1.045);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

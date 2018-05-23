@@ -9,7 +9,8 @@ export class Project {
     quote: string;
     subquote: string;
     description: string;
-    atmosphericUrl: string;
+    atmosphericLeftUrl: string;
+    atmosphericRightUrl: string;
     imagePath: string;
     headerImage: string;
     images: any;

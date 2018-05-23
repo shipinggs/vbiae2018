@@ -14,7 +14,7 @@
             <h3>{{ contact.name }}</h3>
             <p class="font-weight-light">{{ contact.department }}<br>
                 {{ contact.company }}<br>
-                E: {{ contact.email }}<br>
+                E: <a class="contact__email-address" href="mailto: {{contact.email}}">{{ contact.email }}</a><br>
                 {{ contact.telephone }}
             </p>
         </div>
@@ -32,7 +32,7 @@
         <div class="col-md-12">
             <h3>{{ contact.name }}</h3>
             <p class="font-weight-light">{{ contact.title }}<br>
-                E: {{ contact.email }}
+                E: <a class="contact__email-address" href="mailto: {{contact.email}}">{{ contact.email }}</a>
             </p>
         </div>
     </div>

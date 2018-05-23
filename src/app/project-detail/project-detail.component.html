@@ -1,23 +1,19 @@
 <div class="container">
     <div class="row">
         <div class="project-detail col-md-12" *ngIf="project">
-
-            <!-- <div class="project-detail__video-wrapper">
-                <iframe width="560" height="315" [src]="getInterviewUrl()"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>        
-            </div> -->
             
-            <img class="project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
-
-            <h2 class="mt-5 mb-5 font-weight-bold">{{ project.quote }}</h2>
+            <div class="project-detail__interview-video-wrapper" [innerHtml]="interview_iframe_html"></div>
+        
+            <h1 class="mt-5 mb-5 font-weight-bold">{{ project.quote }}</h1>
 
             <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
             <p class="mb-5 font-weight-light multi-lines-text">By {{ project.creator }}</p>
             
+            <img class="mt-5 mb-5 project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
+
             <p>{{ project.description }}</p>
             <h5 class="mt-5" *ngIf="project.type">Type: {{ project.type }}</h5>
-            <h5 *ngIf="project.client">Client: {{ project.client }}</h5>
-                            
+            <h5 *ngIf="project.client">Client: {{ project.client }}</h5>              
         </div>
     </div>
 </div>
@@ -26,9 +22,22 @@
 [width]="galleryWidth" [height]="galleryHeight"></app-gallery>
 
 <div class="container">
-    <div class="row">
+    <div class="row mt-5">
+        <div class="col-md-12 text-center">
+            <h2 class="font-weight-light">Atmospheric Videos</h2>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="project-detail__atmospheric-video-wrapper" [innerHtml]="left_iframe_html"></div>
+        </div>
+        <div class="col-md-6 mt-3">
+            <div class="project-detail__atmospheric-video-wrapper" [innerHtml]="right_iframe_html"></div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
         <div class="col-md-4 offset-md-4">
             <a class="see-others-btn" routerLink="/projects">See Other Projects</a>
         </div>
     </div>
 </div>
+

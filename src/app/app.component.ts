@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HostListener, Inject } from "@angular/core";
-
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,8 @@ import { HostListener, Inject } from "@angular/core";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'No More Free Space';
-  public isCollapsed = true;
-  
+  title = 'No More Free Space?';  
+  constructor(private meta: Meta) {
+    this.meta.addTag({ name: "description", content: "The Singapore Pavilion's No More Free Space? 2018 exhibition is Singapore's sixth showing at the International Architecture Exhibition (Biennale Architettura). No More Free Space? features light projections, videos and images of 12 projects where architects, urban planners and place-makers have demonstrated creative use of space in land-scarce Singapore." });
+  }
 }

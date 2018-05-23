@@ -1,43 +1,93 @@
 .navbar {
     background-color: white;
-    transition: 0.5s ease;
+    transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    padding: 1.2rem 1rem;
 }
 .navbar-brand-logo {
     margin: 0 auto;
-    width: 90px;
-    transition: 0.5s ease;
+    width: 70px;
+    transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+.navbar.scrolled {
+    padding: .3rem 1rem;
+}
+
 @media only screen and (max-width: 768px) {
-    .navbar-brand-logo {
-        width: 80px;
+    .navbar {
+        padding: .3rem .8rem;
     }
-}
-.navbar-brand-logo.scrolled {
-    width: 50px;
+    .navbar.scrolled {
+        padding: .3rem .8rem;
+    }
+    .navbar-brand-logo {
+        width: 60px;
+    }
+    .navbar.scrolled .navbar-brand-logo {
+        width: 60px;
+    }
 }
 
 .navbar-toggler {
     border: none;
 }
 .nav-link.nav-item {
-    margin: 0 10px;
-    color: #6F6F6F;
+    margin: 0 8px;
+    color: #3F3F3F;
     font-weight: lighter;
     font-size: 0.8em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    text-align: center;
+    transition: all .2s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .nav-link.nav-item:hover {
-    color: #0A0A0A;
+    color: #9F9F9F;
 }
 
-.navbar-text {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.navbar-text .architettura-link {
+    margin-left: 1rem;
+    color: #3F3F3F;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     font-weight: lighter;
-    color: #6F6F6F;
     font-size: 0.8em;
+    text-decoration: none;
+}
+.navbar-text .architettura-link-singapore {
+    padding-right: 1rem;
+    border-right: 1px solid #3F3F3F;
+}
+.navbar-text .architettura-link:hover {
+    color: #9F9F9F;
 }
 @media only screen and (max-width: 768px) {
+    .nav-link.nav-item {
+        margin: 3px 10px;
+        font-size: 0.9em;
+        text-align: left;
+    }
+
     .navbar-text {
         display: none;
+    }
+    .collapse, .collapse.show {
+        display: block;
+        transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .collapse {
+        height: 0;
+        opacity: 0;
+    }
+    
+    .collapse.show {
+        margin-top: 24px;
+        opacity: 1;
+        height: 100vh;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+    .collapse.show .navbar-nav {
+        display: block;
     }
 }

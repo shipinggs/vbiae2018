@@ -1,9 +1,12 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { HttpModule } from '@angular/http';
+import { EmbedVideo } from 'ngx-embed-video';
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -47,11 +50,14 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     NgbModule.forRoot(),
     HttpClientModule,
-    NgxGalleryModule
+    NgxGalleryModule,
+    HttpModule,
+    EmbedVideo.forRoot()
    ],
   providers: [
     ProjectService,

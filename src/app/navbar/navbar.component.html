@@ -1,7 +1,6 @@
-<nav class="navbar fixed-top navbar-expand-md navbar-light">
-    <a class="navbar-brand" routerLink="">
+<nav [class.scrolled]="isScrolled" class="navbar fixed-top navbar-expand-md navbar-light">
+    <a (click)="isCollapsed = true" class="navbar-brand" routerLink="">
         <img class="navbar-brand-logo"
-        [class.scrolled]="isScrolled"
         src="/assets/brand/main-logo-light.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
@@ -9,16 +8,16 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" (click)="isCollapsed = !isCollapsed" [ngbCollapse]="isCollapsed">
+    <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
         <div class="navbar-nav mr-auto">
-            <a class="nav-link nav-item" routerLink="/about">ABOUT</a>
-            <a class="nav-link nav-item" routerLink="/pavilion">PAVILION</a>
-            <a class="nav-link nav-item" routerLink="/projects">FEATURED PROJECTS</a>
-            <!-- <a class="nav-link nav-item" routerLink="/events">Events</a> -->
-            <a class="nav-link nav-item" routerLink="/contact">CONTACT</a>
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/about">ABOUT</a>
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/pavilion">PAVILION</a>
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/projects">FEATURED PROJECTS</a>
+            <!-- <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/events">Events</a> -->
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/contact">CONTACT</a>
         </div>
         <span class="navbar-text">
-            SINGAPORE PAVILION&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;VENICE BIENNALE
+            <a class="architettura-link architettura-link-singapore" href="http://www.labiennale.org/en/architecture/2018/national-participations">SINGAPORE PAVILION</a><a class="architettura-link" href="http://www.labiennale.org/en/architecture/2018/16th-international-architecture-exhibition">VENICE BIENNALE</a>
         </span>
     </div>
 </nav>

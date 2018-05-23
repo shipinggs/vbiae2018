@@ -10,7 +10,7 @@
 @media only screen and (max-width: 768px) {
     .project-minis__container {
         margin-bottom: 0;
-    }
+    }    
     .project-mini {
         margin: 0;
         padding: 0;
@@ -29,7 +29,7 @@
     margin: 0 auto;
     width: 100%;
 
-    transition: 0.8s ease-out;
+    transition: transform 1s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.36s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .project-mini__title-container {
@@ -38,24 +38,49 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 92%;
-    width: 92%;
-    margin: 4%;
+    height: 94%;
+    width: 94%;
+    margin: 3%;
 
     opacity: 0;
     background: rgba(0,0,0,0.61);
-    /* transform: scale(0.9); */
+    transform: scale(1);
 
-    transition: .4s ease-out;
+    transition: opacity .8s cubic-bezier(.215,.61,.355,1);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .project-mini__title-container {
         opacity: 1;
-        width: 80%;
+        width: 82%;
+        height: 28%;
+        margin: 0 auto;
+        top: 36%;
+        background: rgba(20,20,20,0.51);
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 992px) {
+    .project-mini__title-container {
+        opacity: 1;
+        width: 88%;
+        height: 30%;
+        margin: 0 auto;
+        top: 35%;
+        background: rgba(20,20,20,0.51);
+        transform: scale(1);
+        font-size: 0.9em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .project-mini__title-container {
+        opacity: 1;
+        width: 82%;
         height: 26%;
         margin: 0 auto;
         top: 37%;
-        background: rgba(0,0,0,0.36);
+        background: rgba(20,20,20,0.51);
+        transform: scale(1);
+        font-size: 1em;
     }
 }
 
@@ -67,15 +92,21 @@
 .project-mini__title {
     color: white;
     position: absolute;
+    margin: 0;
     top: 50%;
     left: 50%;
     width: 82%;
+    line-height: 1.2em;
 
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
+.project-mini__title em {
+    font-size: 0.9em;
+}
+
 .project-mini__link:hover .project-mini__image {
-    transform: scale(1.05)
+    transform: scale(1.06)
 }
