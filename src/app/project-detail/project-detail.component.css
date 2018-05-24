@@ -39,6 +39,16 @@
     margin: 0 auto;
 }
 
+.project-conversation__party {
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .project-conversation__party {
+        text-align: left;
+    }
+}
+
+
 .see-others-btn {
     display: block;
     margin: 50px auto;

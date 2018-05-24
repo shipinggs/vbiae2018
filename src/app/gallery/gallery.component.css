@@ -12,7 +12,7 @@
 
 .gallery-title {
     font-family: 'Ubuntu', Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 ngx-gallery /deep/ .ngx-gallery-image-wrapper {
