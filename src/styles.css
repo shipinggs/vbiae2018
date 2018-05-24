@@ -48,8 +48,9 @@ html {
 body {
     padding-top: 94px;
     height: 100%;
-    color: #222222;
+    color: #282828;
     background-color: #FAFAFA;
+    font-family: Helvetica, Arial, sans-serif;
 }
 @media only screen and (max-width: 768px) {
     body {

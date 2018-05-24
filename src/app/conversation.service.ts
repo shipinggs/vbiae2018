@@ -10,7 +10,7 @@ export class ConversationService {
 
   constructor() { }
 
-  getConversation(tag: string): Observable<Conversation> {
-    return of(CONVERSATIONS.find(conversation => conversation.tag === tag));
+  getConversation(tag: string): Observable<Conversation[]> {
+    return of(CONVERSATIONS.filter(conversation => conversation.tag === tag));
   }
 }

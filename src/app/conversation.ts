@@ -1,6 +1,6 @@
 export class Conversation {
-    id: number;
     tag: string;
+    title: any;
     parties: any;
-    conversation: any;
+    segments: any;
 }

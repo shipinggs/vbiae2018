@@ -17,7 +17,7 @@ import { EmbedVideoService } from 'ngx-embed-video';
 export class ProjectDetailComponent implements OnInit {
 
   project: Project;
-  conversation: Conversation;
+  conversations: Conversation[] = [];
   galleryWidth: string = "600px";
   galleryHeight: string = "750px";
 
@@ -53,8 +53,8 @@ export class ProjectDetailComponent implements OnInit {
         this.right_iframe_html = this.embedService.embed(this.atmosphericRightUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
       });
     this.conversationService.getConversation(tag)
-      .subscribe(conversation => {
-        this.conversation = conversation;
+      .subscribe(conversations => {
+        this.conversations = conversations;
       });
   }
 

@@ -19,12 +19,13 @@
         </div>
     </div>
     <div class="row project-conversation mt-5">
-        <div class="col-md-12">
-            <h2 class="project-conversation__title font-weight-bold text-center mb-3">Conversations</h2>
+        <h2 class="col-md-12 font-weight-bold mb-3">Conversations</h2>
+        <div class="col-md-12 mt-4" *ngFor="let conversation of conversations">
+            <h1 class="project-conversation__title text-green mb-3" *ngIf="conversation.title">{{ conversation.title }}</h1>
             <div class="project-conversation__party font-weight-bold" *ngFor="let party of conversation.parties">
                 <span>{{ party[0] }}_ </span><span class="text-green">{{ party[1] | uppercase }}</span>
             </div>
-            <div class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.conversation">
+            <div class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
                 <h2 class="project-conversation__segment-header font-weight-bold mb-4">"<span class="text-green">{{segment.heading | uppercase }}</span>"</h2>
                 <p *ngFor="let line of segment.speech">
                     <span class="text-green font-weight-bold">{{line[0] | uppercase }}</span> {{line[1]}}
