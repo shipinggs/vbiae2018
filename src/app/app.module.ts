@@ -76,7 +76,7 @@ export class AppModule {
   constructor(config: NgsRevealConfig) {
     // customize default values of ng-scrollreveal directives used by this component tree
     
-    config.duration = 1500;
+    config.duration = 1000;
     // config.easing = 'cubic-bezier(0.95, 0.1, 0.1, 0.95)';
     config.easing = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
     config.delay = 0;
