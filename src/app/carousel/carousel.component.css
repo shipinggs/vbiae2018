@@ -9,7 +9,7 @@
     height: 600px;
     background-size: cover;
     background-position: center center;
-    animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s sizeToFit;
+    animation: 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s sizeToFit;
 }
 .carousel__lockup {
     position: absolute;
@@ -18,7 +18,7 @@
     top: 0;
     right: 0;
     width: 74%;
-    animation: 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s slideInFromTop;
+    animation: 2.5s cubic-bezier(0.185, 0.61, 0.355, 1) 0s slideInFromTop;
 }
 @media only screen and (max-width: 992px) {
     .carousel__banner {
@@ -44,8 +44,8 @@
         transform: scale(1.05);
         opacity: 0;
     }
-    10% {
-        transform: scale(1.045);
+    7% {
+        transform: scale(1.05);
         opacity: 0;
     }
     100% {
@@ -56,13 +56,14 @@
 
 @keyframes slideInFromTop {
     0% {
-        transform: translateY(-150%);
+        transform: translateY(-30%);
         opacity: 0;
     }
-    50% {
-        transform: translateY(-150%);
+    30% {
+        transform: translateY(-30%);
         opacity: 0;
     }
+   
     100% {
         transform: translateY(0);
         opacity: 1;

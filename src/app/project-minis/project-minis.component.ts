@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ProjectMini } from '../project-mini';
 import { ProjectMiniService } from '../project-mini.service';
 
+import { NgsRevealModule } from 'ng-scrollreveal';
+
+
+
 @Component({
   selector: 'app-project-minis',
   templateUrl: './project-minis.component.html',

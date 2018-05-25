@@ -148,8 +148,8 @@ export const PROJECTS: Project[] = [
         quote: "No more free space? We let kids imagine.",
         subquote: "...let kids imagine",
         description: "We reimagined a conventional office space into an adaptive open plan for young children to play and learn through exploration and self-regulation – a model for other early-childhood learning facilities.",
-        atmosphericLeftUrl: "https://www.youtube.com/watch?v=NeIZTL3seOc",
-        atmosphericRightUrl: "https://www.youtube.com/watch?v=JmUDlK_X8FQ",
+        atmosphericLeftUrl: "",
+        atmosphericRightUrl: "",
         imagePath: "/assets/projects/cpc/",
         headerImage: "head.jpg",
         images: ["01.jpg","02.jpg"]

@@ -36,7 +36,7 @@ export class GalleryComponent implements OnInit {
           imageArrowsAutoHide: true,
           imageInfinityMove: true,
           thumbnailsColumns: 4,
-          thumbnailsPercent: 20,
+          // thumbnailsPercent: 50,
           thumbnailsArrowsAutoHide: true,
           thumbnailsSwipe: true,
           imageAnimation: NgxGalleryAnimation.Slide,

@@ -18,7 +18,7 @@ export class ProjectDetailComponent implements OnInit {
 
   project: Project;
   conversations: Conversation[] = [];
-  galleryWidth: string = "600px";
+  galleryWidth: string = "100%";
   galleryHeight: string = "750px";
 
   interview_iframe_html: any;
@@ -48,9 +48,18 @@ export class ProjectDetailComponent implements OnInit {
         this.interviewUrl = project.interviewUrl;
         this.atmosphericLeftUrl = project.atmosphericLeftUrl;
         this.atmosphericRightUrl = project.atmosphericRightUrl;
-        this.interview_iframe_html = this.embedService.embed(this.interviewUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
-        this.left_iframe_html = this.embedService.embed(this.atmosphericLeftUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
-        this.right_iframe_html = this.embedService.embed(this.atmosphericRightUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
+        try {
+          this.interview_iframe_html = this.embedService.embed(this.interviewUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
+        } catch (e) {
+          this.interview_iframe_html = false;
+        }
+        try {
+          this.left_iframe_html = this.embedService.embed(this.atmosphericLeftUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
+          this.right_iframe_html = this.embedService.embed(this.atmosphericRightUrl, { attr: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%" } });
+        } catch (e) {
+          this.left_iframe_html = false;
+          this.right_iframe_html = false;
+        }
       });
     this.conversationService.getConversation(tag)
       .subscribe(conversations => {

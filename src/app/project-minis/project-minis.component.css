@@ -5,6 +5,7 @@
     .project-mini {
         margin: 10px auto;
         padding: 0 10px;
+        background: black;
     }
 }
 @media only screen and (max-width: 768px) {
