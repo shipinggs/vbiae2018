@@ -50,13 +50,13 @@ export class GalleryComponent implements OnInit {
       },
       // max-width 800
       {
-          breakpoint: 800,
+          breakpoint: 768,
           width: '100%',
-          height: '431px',
+          height: '115vw',
           imagePercent: 80,
           thumbnailsPercent: 20,
-          thumbnailsMargin: 10,
-          thumbnailMargin: 10
+          
+         
       },
       // max-width 400
       {
