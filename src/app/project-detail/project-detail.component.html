@@ -25,7 +25,7 @@
             <div class="project-conversation__party font-weight-bold" *ngFor="let party of conversation.parties">
                 <span>{{ party[0] }}_ </span><span class="text-green">{{ party[1] | uppercase }}</span>
             </div>
-            <div ngsReveal class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
+            <div [ngsReveal]="{delay:0,distance:'0px'}" class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
                 <h2 class="project-conversation__segment-header font-weight-bold mb-4">"<span class="text-green">{{segment.heading | uppercase }}</span>"</h2>
                 <p *ngFor="let line of segment.speech">
                     <span class="text-green font-weight-bold">{{line[0] | uppercase }}</span> {{line[1]}}

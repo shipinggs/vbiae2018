@@ -9,6 +9,6 @@ import { Meta } from '@angular/platform-browser';
 export class AppComponent {
   title = 'No More Free Space?';  
   constructor(private meta: Meta) {
-    this.meta.addTag({ name: "description", content: "The Singapore Pavilion's No More Free Space? exhibition features projects where architects, urban planners and place-makers have demonstrated creative use of space in land-scarce Singapore." });
+    this.meta.addTag({ name: "description", content: "The Singapore Pavilion's 'No More Free Space?' exhibition features creative use of space in land-scarce Singapore." });
   }
 }

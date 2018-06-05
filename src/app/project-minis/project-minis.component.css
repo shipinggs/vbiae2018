@@ -5,24 +5,34 @@
     .project-mini {
         margin: 10px auto;
         padding: 0 10px;
-        background: black;
     }
 }
 @media only screen and (max-width: 768px) {
     .project-minis__container {
+        margin-bottom: 10px;
+    }    
+}
+@media only screen and (max-width: 600px) {
+    .project-minis__container {
         margin-bottom: 0;
     }    
     .project-mini {
-        margin: 0;
-        padding: 0;
+        /* margin: 0 auto;
+        padding: 0; */
+
+        margin: 0 auto;
+        margin-bottom: 8px;
+        padding: 0 8px;
     }
 }
+
 
 .project-mini__link {
     float: left;
     position: relative;
     width: 100%;
     overflow: hidden;
+    
 }
 
 .project-mini__image {

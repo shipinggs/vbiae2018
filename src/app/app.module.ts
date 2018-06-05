@@ -81,7 +81,7 @@ export class AppModule {
     config.easing = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
     config.delay = 0;
     config.distance = "20px";
-    config.opacity = 0.2;
+    config.opacity = 0.1;
     config.scale = 1;
     // config.reset = true;
     
