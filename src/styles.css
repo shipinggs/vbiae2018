@@ -1,7 +1,8 @@
 /* Application-wide Styles */
 p, span, em {
     font-family: 'Open Sans', Helvetica, sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
+    line-height: 1.618em;
 }
 h1 {
     color: #212121;

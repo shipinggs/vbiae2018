@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
-import { CURATORS } from './data/about-data';
-import { COMMISSIONERS } from './data/about-data';
+import { CURATORS } from './data/commissioners-curators-data';
+import { COMMISSIONERS } from './data/commissioners-curators-data';
 
 import { Curator } from './curator';
 
 @Injectable()
-export class AboutService {
+export class CommissionersCuratorsService {
 
   constructor() { }
 

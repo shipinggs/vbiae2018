@@ -11,13 +11,15 @@
     <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
         <div class="navbar-nav mr-auto">
             <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/about">ABOUT</a>
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/commissioners">COMMISSIONERS</a>
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/curators">CURATORS</a>
             <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/pavilion">PAVILION</a>
-            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/projects">FEATURED PROJECTS</a>
-            <!-- <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/events">Events</a> -->
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/projects">PROJECTS</a>
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/events">EVENTS</a>
+        </div>
+        <div class="navbar-nav ml-auto">
+            <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/press">PRESS</a>
             <a (click)="isCollapsed = true" class="nav-link nav-item" routerLink="/contact">CONTACT</a>
         </div>
-        <span class="navbar-text">
-            <a class="architettura-link architettura-link-singapore" href="http://www.labiennale.org/en/architecture/2018/national-participations">SINGAPORE PAVILION</a><a class="architettura-link" href="http://www.labiennale.org/en/architecture/2018/16th-international-architecture-exhibition">VENICE BIENNALE</a>
-        </span>
     </div>
 </nav>

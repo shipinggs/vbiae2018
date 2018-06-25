@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <h1 class="mb-3">Curators</h1>
+      </div>
+  </div>
+
+  <div [ngsReveal]="{delay:0}" class="curator row" *ngFor="let curator of curators">
+      <div class="col-4 col-sm-3 col-md-2">
+          <img class="curator-image" src={{curator.imageUrl}} alt="">
+      </div>
+      <div class="col-sm-9 col-md-10">
+          <h2 class="mb-3 font-weight-bold"><span class="text-green curator-name">{{ curator.name }} </span>{{ curator.title }}</h2>
+          <p class="multi-lines-text">{{ curator.text }}</p>
+      </div>
+      
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.curator {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.curator-image {
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 100%;
+}

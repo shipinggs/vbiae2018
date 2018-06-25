@@ -22,7 +22,6 @@ import { AboutComponent } from './about/about.component';
 import { PavilionComponent } from './pavilion/pavilion.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
-import { AboutService } from './about.service';
 import { ProjectMiniService } from './project-mini.service';
 import { ProjectMinisComponent } from './project-minis/project-minis.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -32,6 +31,10 @@ import { ContactService } from './contact.service';
 import { GalleryComponent } from './gallery/gallery.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConversationService } from './conversation.service';
+import { CommissionersCuratorsService } from './commissioners-curators.service';
+import { CuratorsComponent } from './curators/curators.component';
+import { CommissionersComponent } from './commissioners/commissioners.component';
+import { PressComponent } from './press/press.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { ConversationService } from './conversation.service';
     NavbarComponent,
     CarouselComponent,
     GalleryComponent,
-    FooterComponent
+    FooterComponent,
+    CuratorsComponent,
+    CommissionersComponent,
+    PressComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +69,7 @@ import { ConversationService } from './conversation.service';
    ],
   providers: [
     ProjectService,
-    AboutService,
+    CommissionersCuratorsService,
     ProjectMiniService,
     HomeCarouselService,
     ContactService,

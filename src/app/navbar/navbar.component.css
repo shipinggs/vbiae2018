@@ -31,11 +31,13 @@
 .navbar-toggler {
     border: none;
 }
+
 .nav-link.nav-item {
     margin: 0 8px;
     color: #2F2F2F;
     font-weight: lighter;
-    font-size: 0.8em;
+    font-size: 0.73em;
+    letter-spacing: 0.03em;
     font-family: 'Open Sans', Helvetica, sans-serif;
     text-align: center;
     transition: all .2s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -44,32 +46,13 @@
     color: #8F8F8F;
 }
 
-.navbar-text .architettura-link {
-    margin-left: 1rem;
-    color: #3F3F3F;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 0.8em;
-    text-decoration: none;
-    transition: all .2s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.navbar-text .architettura-link-singapore {
-    padding-right: 1rem;
-    border-right: 1px solid #3F3F3F;
-}
-.navbar-text .architettura-link:hover {
-    color: #8F8F8F;
-}
 @media only screen and (max-width: 768px) {
     .nav-link.nav-item {
         margin: 3px 10px;
-        font-size: 0.9em;
+        font-size: 0.8em;
         text-align: left;
     }
 
-    .navbar-text {
-        display: none;
-    }
     .collapse, .collapse.show {
         display: block;
         transition: all .3s cubic-bezier(0.215, 0.61, 0.355, 1);
