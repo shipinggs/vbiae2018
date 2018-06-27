@@ -4,15 +4,15 @@
             
             <div *ngIf="interview_iframe_html" class="project-detail__interview-video-wrapper" [innerHtml]="interview_iframe_html"></div>
         
-            <h1 class="mt-5 mb-5 font-weight-bold text-green">{{ project.quote }}</h1>
+            <h1 [ngsReveal]="{origin:'left',distance:'50px'}" class="mt-5 mb-5 font-weight-bold text-green">{{ project.quote }}</h1>
 
             <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
             <p class="mb-5 font-weight-light multi-lines-text">By {{ project.creator }}</p>
             
             <p>{{ project.description }}</p>
             <p class="mt-5">
-                <span *ngIf="project.type">Type: {{ project.type }}</span><br>
-                <span *ngIf="project.client">Client: {{ project.client }}</span>
+                <span class="project-detail__type" *ngIf="project.type">Type: {{ project.type }}</span><br>
+                <span class="project-detail__client" *ngIf="project.client">Client: {{ project.client }}</span>
             </p>              
 
             <img class="mt-5 mb-3 project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
@@ -25,7 +25,7 @@
             <div class="project-conversation__party font-weight-bold" *ngFor="let party of conversation.parties">
                 <span>{{ party[0] }}_ </span><span class="text-green">{{ party[1] | uppercase }}</span>
             </div>
-            <div [ngsReveal]="{delay:0,distance:'0px'}" class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
+            <div [ngsReveal]="{delay:0,origin:'left'}" class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
                 <h2 class="project-conversation__segment-header font-weight-bold mb-4">"<span class="text-green">{{segment.heading | uppercase }}</span>"</h2>
                 <p *ngFor="let line of segment.speech">
                     <span class="text-green font-weight-bold">{{line[0] | uppercase }}</span> {{line[1]}}

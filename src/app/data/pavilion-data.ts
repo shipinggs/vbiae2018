@@ -3,7 +3,7 @@ import { Project } from '../project';
 export const PAVILION: Project[] = [
     {
         id: 1,
-        title: "About the Singapore Pavilion - No More Free Space?",
+        title: "The Singapore Pavilion - No More Free Space?",
         tag: "sgp",
         creator: "",
         interviewUrl: "",
@@ -16,6 +16,6 @@ export const PAVILION: Project[] = [
         atmosphericRightUrl: "",
         imagePath: "/assets/pavilion/",
         headerImage: "head.jpg",
-        images: ["01.jpg","02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg"]
+        images: ["02.jpg","03.jpg","04.jpg","05.jpg","06.jpg","07.jpg","08.jpg","09.jpg","10.jpg"]
     }
 ]

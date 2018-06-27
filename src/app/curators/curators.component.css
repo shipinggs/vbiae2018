@@ -9,3 +9,15 @@
     margin-bottom: 12px;
     width: 100%;
 }
+
+.curator-name {
+    display: inline-block;
+    margin-right: 14px;
+    padding-right: 14px;
+    border-right: 2px solid #454545;
+    font-weight: bold;
+}
+
+.curator-title {
+    display: inline-block;
+}

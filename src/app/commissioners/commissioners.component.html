@@ -5,13 +5,14 @@
       </div>
   </div>
           
-  <div [ngsReveal]="{delay:0}" class="commissioner row mb-5" *ngFor="let commissioner of commissioners">
-      <div class="col-sm-9">
+  <div class="commissioner row mb-5" *ngFor="let commissioner of commissioners">
+      <div [ngsReveal]="{distance:'0px'}" class="col-sm-7">
           <img class="commissioner-image" src={{commissioner.imageUrl}} alt="">
       </div>
-      <div class="col-sm-12">
-          <h2 class="mt-3 mb-3 font-weight-bold"><span class="text-green commissioner-name">{{ commissioner.name }}</span> {{ commissioner.title }}</h2>
+      <div [ngsReveal]="{distance:'0px'}" class="col-sm-12">
+            <h2 class="text-green commissioner-name mb-3">{{ commissioner.name }}</h2><h2 [ngsReveal]="{distance:'36px',origin:'left'}" class="commissioner-title">{{commissioner.title}}</h2>
           <p class="multi-lines-text">{{ commissioner.text }}</p>
       </div>
   </div>
 </div>
+<!-- THE LINE BESIDE THE NAME TO SEPARATE FROM TITLE, MAYBE ALSO MAKE TITLE UNBOLD -->
