@@ -4,8 +4,6 @@ import { ProjectMiniService } from '../project-mini.service';
 
 import { NgsRevealModule } from 'ng-scrollreveal';
 
-
-
 @Component({
   selector: 'app-project-minis',
   templateUrl: './project-minis.component.html',
@@ -25,5 +23,4 @@ export class ProjectMinisComponent implements OnInit {
     this.projectMiniService.getProjectMinis()
       .subscribe(projectMinis => this.projectMinis = projectMinis);
   }
-
 }

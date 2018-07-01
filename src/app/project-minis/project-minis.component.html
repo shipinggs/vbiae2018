@@ -8,12 +8,15 @@
   <div class="row">
     <div class="project-mini col-xl-3 col-md-4"
     *ngFor="let projectMini of projectMinis">
-      <a [ngsReveal]="{delay:0}" class="project-mini__link" routerLink={{projectMini.projectUrl}}>
-        <img class="project-mini__image" src={{projectMini.imagePath}} alt="">
-        <div class="project-mini__title-container">
-          <h4 class="project-mini__title"><span class="text-green">{{projectMini.subquote}}.</span><br><br><em>{{projectMini.title}}</em></h4>
-        </div>
-      </a>
+
+      <app-project-mini [projectUrl]="projectMini.projectUrl"
+      [imagePath]="projectMini.imagePath"
+      [lowResImagePath]="projectMini.lowResImagePath"
+      [subquote]="projectMini.subquote"
+      [title]="projectMini.title"
+      ></app-project-mini>
+
     </div>
   </div>
+  
 </div>

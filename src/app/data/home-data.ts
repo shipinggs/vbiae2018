@@ -8,7 +8,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "lks",
         subquote: "...define space by volume not by area",
         projectUrl: "/projects/lks",
-        imagePath: "/assets/project-thumbnails/lks.jpg"
+        imagePath: "/assets/project-thumbnails/lks.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/lks.jpg"
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "tho",
         subquote: "...breathe in between",
         projectUrl: "/projects/tho",
-        imagePath: "/assets/project-thumbnails/tho.jpg"
+        imagePath: "/assets/project-thumbnails/tho.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/tho.jpg"
     },
     {
         id: 3,
@@ -24,7 +26,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "std",
         subquote: "...live in the sky",
         projectUrl: "/projects/std",
-        imagePath: "/assets/project-thumbnails/std.jpg"
+        imagePath: "/assets/project-thumbnails/std.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/std.jpg"
     },
     {
         id: 4,
@@ -32,7 +35,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "ebv",
         subquote: "...upcycle, repurpose, reuse",
         projectUrl: "/projects/ebv",
-        imagePath: "/assets/project-thumbnails/ebv.jpg"
+        imagePath: "/assets/project-thumbnails/ebv.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/ebv.jpg"
     },
     {
         id: 5,
@@ -40,7 +44,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "ktp",
         subquote: "...borrow a pond",
         projectUrl: "/projects/ktp",
-        imagePath: "/assets/project-thumbnails/ktp.jpg"
+        imagePath: "/assets/project-thumbnails/ktp.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/ktp.jpg"
     },
     {
         id: 6,
@@ -48,7 +53,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "bap",
         subquote: "...undo the drain",
         projectUrl: "/projects/bap",
-        imagePath: "/assets/project-thumbnails/bap.jpg"
+        imagePath: "/assets/project-thumbnails/bap.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/bap.jpg"
     },
     {
         id: 7,
@@ -56,7 +62,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "str",
         subquote: "...draw a line to connect the ridges",
         projectUrl: "/projects/str",
-        imagePath: "/assets/project-thumbnails/str.jpg"
+        imagePath: "/assets/project-thumbnails/str.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/str.jpg"
     },
     {
         id: 8,
@@ -64,7 +71,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "ilm",
         subquote: "...reclaim",
         projectUrl: "/projects/ilm",
-        imagePath: "/assets/project-thumbnails/ilm.jpg"
+        imagePath: "/assets/project-thumbnails/ilm.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/ilm.jpg"
     },
     {
         id: 9,
@@ -72,7 +80,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "cpc",
         subquote: "...let kids imagine",
         projectUrl: "/projects/cpc",
-        imagePath: "/assets/project-thumbnails/cpc.jpg"
+        imagePath: "/assets/project-thumbnails/cpc.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/cpc.jpg"
     },
     {
         id: 10,
@@ -80,7 +89,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "lbo",
         subquote: "...learn in the mall",
         projectUrl: "/projects/lbo",
-        imagePath: "/assets/project-thumbnails/lbo.jpg"
+        imagePath: "/assets/project-thumbnails/lbo.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/lbo.jpg"
     },
     {
         id: 11,
@@ -88,7 +98,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "glm",
         subquote: "...dine together at the void",
         projectUrl: "/projects/glm",
-        imagePath: "/assets/project-thumbnails/glm.jpg"
+        imagePath: "/assets/project-thumbnails/glm.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/glm.jpg"
     },
     {
         id: 12,
@@ -96,7 +107,8 @@ export const PROJECT_MINIS: ProjectMini[] = [
         tag: "clr",
         subquote: "...occupy",
         projectUrl: "/projects/clr",
-        imagePath: "/assets/project-thumbnails/clr.jpg"
+        imagePath: "/assets/project-thumbnails/clr.jpg",
+        lowResImagePath: "/assets/project-thumbnails/low-res/clr.jpg"
     }
 ]
 

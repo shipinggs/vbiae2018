@@ -10,9 +10,8 @@
           <img class="commissioner-image" src={{commissioner.imageUrl}} alt="">
       </div>
       <div [ngsReveal]="{distance:'0px'}" class="col-sm-12">
-            <h2 class="text-green commissioner-name mb-3">{{ commissioner.name }}</h2><h2 [ngsReveal]="{distance:'36px',origin:'left'}" class="commissioner-title">{{commissioner.title}}</h2>
+            <h2 class="text-green commissioner-name mb-3">{{ commissioner.name }}</h2><h2 [ngsReveal]="{distance:'36px',origin:'left',delay:300}" class="commissioner-title">{{commissioner.title}}</h2>
           <p class="multi-lines-text">{{ commissioner.text }}</p>
       </div>
   </div>
 </div>
-<!-- THE LINE BESIDE THE NAME TO SEPARATE FROM TITLE, MAYBE ALSO MAKE TITLE UNBOLD -->

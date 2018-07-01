@@ -1,0 +1,11 @@
+<a class="project-mini__link" [routerLink]="projectUrl">
+  <img class="project-mini__image"
+  [defaultImage]="lowResImagePath"
+  [lazyLoad]="imagePath"
+  [offset]="offset"
+  [scrollObservable]="scrollObservable"
+  alt="">
+  <div class="project-mini__title-container">
+    <h4 class="project-mini__title"><span class="text-green">{{subquote}}.</span><br><br><em>{{title}}</em></h4>
+  </div>
+</a>

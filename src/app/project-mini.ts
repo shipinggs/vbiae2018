@@ -5,4 +5,5 @@ export class ProjectMini {
     subquote: string;
     projectUrl: string;
     imagePath: string;
+    lowResImagePath: string;
 }

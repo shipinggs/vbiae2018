@@ -9,6 +9,7 @@ import { HttpModule } from '@angular/http';
 import { EmbedVideo } from 'ngx-embed-video';
 import { NgsRevealModule } from 'ng-scrollreveal';
 import { NgsRevealConfig } from 'ng-scrollreveal';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 
 import { AppComponent } from './app.component';
@@ -35,6 +36,7 @@ import { CommissionersCuratorsService } from './commissioners-curators.service';
 import { CuratorsComponent } from './curators/curators.component';
 import { CommissionersComponent } from './commissioners/commissioners.component';
 import { PressComponent } from './press/press.component';
+import { ProjectMiniComponent } from './project-mini/project-mini.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { PressComponent } from './press/press.component';
     FooterComponent,
     CuratorsComponent,
     CommissionersComponent,
-    PressComponent
+    PressComponent,
+    ProjectMiniComponent
   ],
   imports: [
     BrowserModule,
@@ -65,8 +68,9 @@ import { PressComponent } from './press/press.component';
     NgxGalleryModule,
     HttpModule,
     EmbedVideo.forRoot(),
-    NgsRevealModule.forRoot()
-   ],
+    NgsRevealModule.forRoot(),
+    LazyLoadImageModule
+  ],
   providers: [
     ProjectService,
     CommissionersCuratorsService,
@@ -80,18 +84,15 @@ import { PressComponent } from './press/press.component';
 })
 export class AppModule {
   constructor(config: NgsRevealConfig) {
-    // customize default values of ng-scrollreveal directives used by this component tree
     
+    // customize default values of ng-scrollreveal directives used by this component tree
     config.duration = 1000;
-    // config.easing = 'cubic-bezier(0.95, 0.1, 0.1, 0.95)';
     config.easing = 'cubic-bezier(0.215, 0.61, 0.355, 1)';
     config.delay = 0;
     config.distance = "30px";
     config.opacity = 0;
     config.scale = 1;
-    config.viewFactor = 0.35;
-    // config.reset = true;
-    
+    config.viewFactor = 0.25;    
     
   }
 }
