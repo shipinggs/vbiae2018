@@ -119,7 +119,11 @@ export const CAROUSEL_IMAGES: CarouselImage[] = [
         creator: "",
         description: "",
         redirectUrl: "",
-        imagePath: "/assets/home-carousel/01.jpg"
+        veryHighResImagePath: "/assets/home-carousel/banner-2880w.jpg",
+        highResImagePath: "/assets/home-carousel/banner-1920w.jpg",
+        mediumResImagePath: "/assets/home-carousel/banner-1440w.jpg",
+        lowResImagePath: "/assets/home-carousel/banner-1200w.jpg",
+        veryLowResImagePath: "/assets/home-carousel/banner-1024w.jpg",
     },
     {
         id: 2,
@@ -127,7 +131,11 @@ export const CAROUSEL_IMAGES: CarouselImage[] = [
         creator: "",
         description: "",
         redirectUrl: "",
-        imagePath: "/assets/home-carousel/lockup-light.png"
+        veryHighResImagePath: "/assets/home-carousel/lockup-light-1440w.png",
+        highResImagePath: "/assets/home-carousel/lockup-light-1440w.png",
+        mediumResImagePath: "/assets/home-carousel/lockup-light-1440w.png",
+        lowResImagePath: "/assets/home-carousel/lockup-light-768w.png",
+        veryLowResImagePath: "/assets/home-carousel/lockup-light-768w.png"
     }
 ]
 

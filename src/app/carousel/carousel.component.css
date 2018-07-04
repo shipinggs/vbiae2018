@@ -4,35 +4,48 @@
     overflow: hidden;
 }
 
-.carousel__banner {
+.carousel__banner-container {
     position: relative;
-    height: 600px;
-    background-size: cover;
-    background-position: center center;
+    width: 100%;
+}
+
+.carousel__banner-image {
+    display: block;
+    margin: 0;
+    height: 100%;
+    object-fit: cover;
     animation: 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s sizeToFit;
 }
+
 .carousel__lockup {
     position: absolute;
     margin: 0 auto;
-    padding-top: 6px;
-    top: 0;
+    bottom: 2%;
     right: 0;
     width: 74%;
-    animation: 2.5s cubic-bezier(0.185, 0.61, 0.355, 1) 0s slideInFromTop;
+    max-width: 1440px;
+    animation: 2.5s cubic-bezier(0.185, 0.61, 0.355, 1) 0s slideInFromBottom;
 }
+
+@media only screen and (max-width: 1024px) {
+    .carousel__banner-container {
+        /* height: 720px; */
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .carousel__lockup {
         width: 84%;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .carousel__banner {
-        height: 500px;
+@media only screen and (max-width: 600px) {
+    .carousel__banner-container {
+        height: 600px;
     }
     .carousel__lockup {
-        width: 96%;
-        top: 1%;
+        width: 98%;
+        bottom: 4%;
         left: 0;
     }
 }
@@ -59,6 +72,22 @@
     }
     30% {
         transform: translateY(-30%);
+        opacity: 0;
+    }
+   
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    30% {
+        transform: translateY(30%);
         opacity: 0;
     }
    

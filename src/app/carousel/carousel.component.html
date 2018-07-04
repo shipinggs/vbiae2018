@@ -1,6 +1,17 @@
 <div class=carousel__container>
-    <!-- <img class="carousel__banner" src={{carouselSlides[0].imagePath}} alt=""> -->
-    <div class="carousel__banner" [style.backgroundImage]="'url('+ carouselSlides[0].imagePath +')'">
+    <!-- <div class="carousel__banner" [style.backgroundImage]="'image-set('+ carouselSlides[0].imagePath +')'">
+    </div> -->
+    <div class="carousel__banner-container">
+        <img class="carousel__banner-image"
+            srcset="{{carouselSlides[0].veryLowResImagePath}} 1024w,
+            {{carouselSlides[0].lowResImagePath}} 1200w,
+            {{carouselSlides[0].mediumResImagePath}} 1440w,
+            {{carouselSlides[0].highResImagePath}} 1920w,
+            {{carouselSlides[0].veryHighResImagePath}} 2880w"
+            src="{{carouselSlides[0].veryLowResImagePath}}" alt="singapore pavilion">
     </div>
-    <img class="carousel__lockup" src={{carouselSlides[1].imagePath}} alt="">
+    <img class="carousel__lockup" 
+        srcset="{{carouselSlides[1].highResImagePath}} 1440w,
+        {{carouselSlides[1].lowResImagePath}} 768w"
+        src={{carouselSlides[1].veryHighResImagePath}} alt="lockup">
 </div>

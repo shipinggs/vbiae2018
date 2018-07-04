@@ -13,8 +13,8 @@ export class ProjectMiniComponent implements OnInit {
   @Input() lowResImagePath: string;
   @Input() subquote: string;
   @Input() title: string;
-  offset = 100;
-  scrollObservable = Observable.fromEvent(document.body, 'scroll');
+  // offset = 100;
+  // scrollObservable = Observable.fromEvent(document.body, 'scroll');
 
   constructor() { }
 

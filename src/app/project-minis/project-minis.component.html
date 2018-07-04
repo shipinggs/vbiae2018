@@ -6,10 +6,11 @@
   </div>
   
   <div class="row">
-    <div class="project-mini col-xl-3 col-md-4"
+    <div ngsReveal class="project-mini col-xl-3 col-md-4"
     *ngFor="let projectMini of projectMinis">
 
-      <app-project-mini [projectUrl]="projectMini.projectUrl"
+      <app-project-mini
+      [projectUrl]="projectMini.projectUrl"
       [imagePath]="projectMini.imagePath"
       [lowResImagePath]="projectMini.lowResImagePath"
       [subquote]="projectMini.subquote"

@@ -4,5 +4,9 @@ export class CarouselImage {
     creator: string;
     description: string;
     redirectUrl: string;
-    imagePath: string;
+    veryHighResImagePath: string;
+    highResImagePath: string;
+    mediumResImagePath: string;
+    lowResImagePath: string;
+    veryLowResImagePath: string;
 }

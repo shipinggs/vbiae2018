@@ -1,11 +1,12 @@
 <a class="project-mini__link" [routerLink]="projectUrl">
-  <img class="project-mini__image"
+  <!-- <img class="project-mini__image"
   [defaultImage]="lowResImagePath"
   [lazyLoad]="imagePath"
   [offset]="offset"
   [scrollObservable]="scrollObservable"
-  alt="">
+  alt=""> -->
+  <img [src]="imagePath" alt="" class="project-mini__image">
   <div class="project-mini__title-container">
-    <h4 class="project-mini__title"><span class="text-green">{{subquote}}.</span><br><br><em>{{title}}</em></h4>
+    <h4 class="project-mini__title"><span class="project-mini__quote text-green">{{subquote}}.</span><em class="project-mini__name">{{title}}</em></h4>
   </div>
 </a>
