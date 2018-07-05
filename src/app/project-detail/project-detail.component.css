@@ -1,25 +1,25 @@
-.project-detail__interview-video-wrapper {    
+.project-detail__interview-video-wrapper {  
     width: 100%;
-    height: 624.4px;
+    height: 517.5px;
 }
 .project-detail__atmospheric-video-wrapper {
     width: 100%;
-    height: 304px;
+    height: 250px;
 }
 @media only screen and (max-width: 1200px) {
     .project-detail__interview-video-wrapper {
-        height: 523.1px;
+        height: 433.1px;
     }
     .project-detail__atmospheric-video-wrapper {
-        height: 253px;
+        height: 208px;
     }
 }
 @media only screen and (max-width: 992px) {
     .project-detail__interview-video-wrapper {
-        height: 388.1px;
+        height: 320.6px;
     }
     .project-detail__atmospheric-video-wrapper {
-        height: 185.6px;
+        height: 151.9px;
     }
 }
 @media only screen and (max-width: 768px) {

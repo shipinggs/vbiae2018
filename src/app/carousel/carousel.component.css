@@ -20,7 +20,7 @@
 .carousel__lockup {
     position: absolute;
     margin: 0 auto;
-    bottom: 2%;
+    bottom: 7%;
     right: 0;
     width: 74%;
     max-width: 1440px;
@@ -41,7 +41,7 @@
 
 @media only screen and (max-width: 600px) {
     .carousel__banner-container {
-        height: 600px;
+        height: 560px;
     }
     .carousel__lockup {
         width: 98%;

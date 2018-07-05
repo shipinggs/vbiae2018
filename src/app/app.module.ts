@@ -92,7 +92,7 @@ export class AppModule {
     config.distance = "30px";
     config.opacity = 0;
     config.scale = 1;
-    config.viewFactor = 0.25;    
+    config.viewFactor = 0.22;    
     
   }
 }

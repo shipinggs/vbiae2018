@@ -1,13 +1,9 @@
 <div class="container">
+    
     <div class="row">
         <div class="col-md-12">
-            <img  class="pavilion__header-image" src={{pavilion.imagePath}}{{pavilion.headerImage}} alt="">
-            <h1 class="mt-5">{{ pavilion.title }}</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
+            <h1 class="pavilion__static-title">Singapore Pavilion</h1>
+            <h1 class="pavilion__moving-title text-green">{{ pavilion.title }}</h1>
             <p class="multi-lines-text">
                 {{pavilion.description}}
             </p>
@@ -15,5 +11,5 @@
     </div>
 </div>
 
-<app-gallery [imagePath]="pavilion.imagePath" [images]="pavilion.images"
+<app-gallery [inputClass]="'col-md-12'" [imagePath]="pavilion.imagePath" [images]="pavilion.images"
 [width]="galleryWidth" [height]="galleryHeight" imageSize="contain"></app-gallery>

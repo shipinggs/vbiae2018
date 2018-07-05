@@ -11,7 +11,8 @@ export class Project {
     description: string;
     atmosphericLeftUrl: string;
     atmosphericRightUrl: string;
-    imagePath: string;
-    headerImage: string;
+    lowResHeaderImage: string;
+    mediumResHeaderImage: string;
+    highResHeaderImage: string;
     images: any;
 }

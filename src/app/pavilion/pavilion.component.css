@@ -1,3 +1,11 @@
-.pavilion__header-image {
-    margin: 0 auto;
+.pavilion__static-title {
+    /* display: inline-block; */
+    margin-right: 14px;
+    padding-right: 14px;
+    /* border-right: 3px solid #454545; */
+    font-weight: bold;
+}
+
+.pavilion__moving-title {
+    /* display: inline-block; */
 }

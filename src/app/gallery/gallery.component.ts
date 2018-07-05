@@ -7,19 +7,20 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImag
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-  galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[] = [];
+  @Input() inputClass: string;
   @Input() imagePath: string;
-  @Input() images: string[]; 
+  @Input() images: object[]; 
   @Input() width: string; 
   @Input() height: string; 
   @Input() imageSize: string;
+  galleryOptions: NgxGalleryOptions[];
+  galleryImages: NgxGalleryImage[];
   
   constructor() { }
 
   ngOnInit() {
     this.setGalleryOptions();
-    this.setGalleryImages();
+    this.galleryImages = this.images;
   }
 
   setGalleryOptions() {

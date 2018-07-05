@@ -1,3 +1,7 @@
+.project-minis__title {
+    display: inline-block;
+}
+
 .project-mini {
     margin: 16px auto;
 }

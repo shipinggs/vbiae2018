@@ -1,33 +1,39 @@
 <div class="container" *ngIf="project">
     <div class="row">
-        <div class="col-md-12">
+
+        <div class="col-md-10 offset-md-1">
             
             <div *ngIf="interview_iframe_html" class="project-detail__interview-video-wrapper" [innerHtml]="interview_iframe_html"></div>
-        
+                
             <h1 [ngsReveal]="{origin:'left',distance:'50px'}" class="mt-5 mb-5 font-weight-bold text-green">{{ project.quote }}</h1>
-
-            <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
-            <p class="mb-5 font-weight-light multi-lines-text">By {{ project.creator }}</p>
             
-            <p>{{ project.description }}</p>
-            <p class="mt-5">
-                <span class="project-detail__type" *ngIf="project.type">Type: {{ project.type }}</span><br>
-                <span class="project-detail__client" *ngIf="project.client">Client: {{ project.client }}</span>
-            </p>              
+            <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
+            <p class="font-weight-light multi-lines-text">By {{ project.creator }}</p>
+            <em *ngIf="project.type" class="project-detail__type text-secondary">Type: {{ project.type }}</em><br>
+            <em *ngIf="project.client" class="project-detail__client text-secondary">Client: {{ project.client }}</em>
+            
+            <p class="mt-3">{{ project.description }}</p>
+            
+            <img
+                class="mt-5 mb-3 project-detail__header-image"
+                srcset="{{project.lowResHeaderImage}} 1024w,
+                {{project.mediumResHeaderImage}} 1920w,
+                {{project.highResHeaderImage}} 2880w"
+                src={{project.mediumResHeaderImage}} alt="">
 
-            <img class="mt-5 mb-3 project-detail__header-image" src={{project.imagePath}}{{project.headerImage}} alt="">
         </div>
     </div>
+    
     <div class="row project-conversation mt-5">
-        <h2 class="col-md-12 font-weight-bold mb-3">Conversations</h2>
-        <div class="col-md-12 mt-4" *ngFor="let conversation of conversations">
+        <h2 class="col-md-10 offset-md-1 font-weight-bold mb-3">Conversations</h2>
+        <div class="col-md-10 offset-md-1 mt-4" *ngFor="let conversation of conversations">
             <h1 class="project-conversation__title text-green mb-3" *ngIf="conversation.title">{{ conversation.title }}</h1>
             <div class="project-conversation__party font-weight-bold" *ngFor="let party of conversation.parties">
                 <span>{{ party[0] }}_ </span><span class="text-green">{{ party[1] | uppercase }}</span>
             </div>
-            <div [ngsReveal]="{delay:0,origin:'left'}" class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
+            <div [ngsReveal]="{delay:0,origin:'bottom'}" class="project-conversation__segment mt-5 mb-5" *ngFor="let segment of conversation.segments">
                 <h2 class="project-conversation__segment-header font-weight-bold mb-4">"<span class="text-green">{{segment.heading | uppercase }}</span>"</h2>
-                <p *ngFor="let line of segment.speech">
+                <p [ngsReveal]="{delay:0,origin:'bottom'}"  *ngFor="let line of segment.speech">
                     <span class="text-green font-weight-bold">{{line[0] | uppercase }}</span> {{line[1]}}
                 </p>
             </div>
@@ -35,18 +41,18 @@
     </div>
 </div>
 
-<app-gallery *ngIf="project" [imagePath]="project.imagePath" [images]="project.images"
-[width]="galleryWidth" [height]="galleryHeight" imageSize="contain"></app-gallery>
+<app-gallery *ngIf="project" [inputClass]="'col-md-10 offset-md-1'" [imagePath]="project.imagePath" [images]="project.images"
+            [width]="galleryWidth" [height]="galleryHeight" imageSize="contain"></app-gallery>
 
 <div class="container" *ngIf="project">
     <div class="row mt-5" *ngIf="left_iframe_html && right_iframe_html">
-        <div class="col-md-12 text-center">
-            <h2 class="font-weight-bold">Atmospheric Videos</h2>
+        <div class="col-md-10 offset-md-1 text-center">
+            <h2 class="font-weight-bold">Ambience</h2>
         </div>
-        <div class="col-md-6 mt-3">
+        <div class="col-md-5 offset-md-1 mt-3">
             <div class="project-detail__atmospheric-video-wrapper" [innerHtml]="left_iframe_html"></div>
         </div>
-        <div class="col-md-6 mt-3">
+        <div class="col-md-5 mt-3">
             <div class="project-detail__atmospheric-video-wrapper" [innerHtml]="right_iframe_html"></div>
         </div>
     </div>
