@@ -20,8 +20,8 @@
 .carousel__lockup {
     position: absolute;
     margin: 0 auto;
-    bottom: 7%;
-    right: 0;
+    bottom: 4%;
+    right: 0%;
     width: 74%;
     max-width: 1440px;
     animation: 2.5s cubic-bezier(0.185, 0.61, 0.355, 1) 0s slideInFromBottom;
@@ -45,7 +45,7 @@
     }
     .carousel__lockup {
         width: 98%;
-        bottom: 4%;
+        bottom: 2%;
         left: 0;
     }
 }

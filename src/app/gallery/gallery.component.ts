@@ -8,7 +8,6 @@ import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation, NgxGalleryImag
 })
 export class GalleryComponent implements OnInit {
   @Input() inputClass: string;
-  @Input() imagePath: string;
   @Input() images: object[]; 
   @Input() width: string; 
   @Input() height: string; 
@@ -65,16 +64,6 @@ export class GalleryComponent implements OnInit {
           preview: false
        }
     ];
-  }
-
-  setGalleryImages() {
-    for (let image of this.images) {
-      this.galleryImages.push({
-        small: this.imagePath+image,
-        medium: this.imagePath+image,
-        big: this.imagePath+image
-      })
-    }
   }
 
 
