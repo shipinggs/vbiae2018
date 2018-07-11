@@ -1,0 +1,56 @@
+
+.past-events__card-wrapper {
+    display: flex;
+}
+
+.past_events__image-container {
+    overflow: hidden;
+}
+
+.past-events__card-image {
+    margin: 0;
+    cursor: pointer;
+    filter: brightness(0.9);
+    object-fit: cover;
+    transition: 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.past-events__event-card {
+    display: flex;
+    margin: 16px 0;
+    padding-bottom: 1.4em;
+    background: white;
+    box-shadow: 0 2px 3px 0 rgba(114, 59, 59, 0.16);
+    overflow: hidden;
+}
+
+.past-events__event-card:hover .past-events__card-image {
+    filter: brightness(1.05);
+    transform: scale(1.06)
+}
+
+.past-events__event-information {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2.8em;
+}
+
+.past-events__more-button {
+    position: absolute;
+    /* background: #38d42f; */
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes sizeToFit {
+    0% {
+        transform: scale(1);
+    }
+    7% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}

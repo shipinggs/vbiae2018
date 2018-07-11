@@ -4,9 +4,27 @@
         <h1>Events</h1>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <p>Coming Soon</p>
+
+  <div class="row past-events">
+    <div ngsReveal class="past-events__card-wrapper col-md-4 col-sm-6" *ngFor="let event of past_events">
+
+      <div class="past-events__event-card">
+          
+          <div class= "past-events__event-information">
+              
+            <div class="past_events__image-container">
+              <img class="past-events__card-image" [routerLink]="event.eventUrl" src="{{event.images[0]['small']}}" alt="event image">    
+            </div>
+            
+              <h1 class="mx-3 my-3">{{event.title}}</h1>
+              <h4 class="mx-3"><fa class="mr-2" name="calendar"></fa>{{event.startDate | date: "mediumDate"}}<ng-container *ngIf="event.endDate"> &ndash; {{event.endDate | date: "mediumDate"}}</ng-container></h4>
+              <h4 class="mx-3"><fa class="mr-2" name="map-marker"></fa>{{ event.location }}</h4>
+              <p class="mx-3 mt-3">{{event.snippet}}</p>
+              <button class="mx-3 mt-3 btn btn-primary past-events__more-button" [routerLink]="event.eventUrl"><span>LEARN MORE</span><fa class="ml-2" name="arrow-circle-right"></fa></button>
+          </div>
+      </div>
+      
     </div>
   </div>
+
 </div>
