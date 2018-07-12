@@ -1,0 +1,17 @@
+.about__curator {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.about__curator-image {
+    display: inline-block;
+    margin: 0 auto;
+    padding-right: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .about__curator-image {
+        padding-right: 12px;
+    }
+}

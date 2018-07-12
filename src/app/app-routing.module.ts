@@ -9,17 +9,17 @@ import { ContactComponent } from './contact/contact.component';
 import { CuratorsComponent } from './curators/curators.component';
 import { CommissionersComponent } from './commissioners/commissioners.component';
 import { PressComponent } from './press/press.component';
-import { EventDetailComponent } from './event-detail/event-detail.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'projects/:tag', component: ProjectDetailComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'about', component: AboutComponent },
   { path: 'commissioners', component: CommissionersComponent },
   { path: 'curators', component: CuratorsComponent },
   { path: 'pavilion', component: PavilionComponent },
-  { path: 'events/:tag', component: EventDetailComponent },
   { path: 'events', component: EventsComponent },
   { path: 'press', component: PressComponent },
   { path: 'contact', component: ContactComponent },

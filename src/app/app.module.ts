@@ -10,7 +10,6 @@ import { EmbedVideo } from 'ngx-embed-video';
 import { NgsRevealModule } from 'ng-scrollreveal';
 import { NgsRevealConfig } from 'ng-scrollreveal';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 import { AppComponent } from './app.component';
@@ -20,6 +19,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { ProjectService } from './project.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 import { PavilionComponent } from './pavilion/pavilion.component';
 import { ContactComponent } from './contact/contact.component';
 import { EventsComponent } from './events/events.component';
@@ -37,8 +37,6 @@ import { CuratorsComponent } from './curators/curators.component';
 import { CommissionersComponent } from './commissioners/commissioners.component';
 import { PressComponent } from './press/press.component';
 import { ProjectMiniComponent } from './project-mini/project-mini.component';
-import { EventService } from './event.service';
-import { EventDetailComponent } from './event-detail/event-detail.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +44,7 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     ProjectsComponent,
     ProjectDetailComponent,
     HomeComponent,
+    AboutComponent,
     PavilionComponent,
     ContactComponent,
     EventsComponent,
@@ -57,8 +56,7 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     CuratorsComponent,
     CommissionersComponent,
     PressComponent,
-    ProjectMiniComponent,
-    EventDetailComponent
+    ProjectMiniComponent
   ],
   imports: [
     BrowserModule,
@@ -71,8 +69,7 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     HttpModule,
     EmbedVideo.forRoot(),
     NgsRevealModule.forRoot(),
-    LazyLoadImageModule,
-    AngularFontAwesomeModule
+    LazyLoadImageModule
   ],
   providers: [
     ProjectService,
@@ -80,7 +77,6 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     ProjectMiniService,
     HomeCarouselService,
     ContactService,
-    EventService,
     ConversationService,
     NgbTabsetConfig
   ],

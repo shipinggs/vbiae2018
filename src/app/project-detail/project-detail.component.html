@@ -12,7 +12,7 @@
             <em *ngIf="project.type" class="project-detail__type text-secondary">Type: {{ project.type }}</em><br>
             <em *ngIf="project.client" class="project-detail__client text-secondary">Client: {{ project.client }}</em>
             
-            <p class="mt-3" [innerHTML]=project.description></p>
+            <p class="mt-3">{{ project.description }}</p>
             
             <img
                 class="mt-5 mb-3 project-detail__header-image"

@@ -7,7 +7,7 @@ import { Project } from '../project';
 import { ProjectService }  from '../project.service';
 import { Conversation } from '../conversation';
 import { ConversationService } from '../conversation.service';
-import { EmbedVideoService } from 'ngx-embed-video/dist';
+import { EmbedVideoService } from 'ngx-embed-video';
 
 @Component({
   selector: 'app-project-detail',

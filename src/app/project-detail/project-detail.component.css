@@ -1,12 +1,10 @@
 .project-detail__interview-video-wrapper {  
     width: 100%;
     height: 517.5px;
-    background: #232323;
 }
 .project-detail__atmospheric-video-wrapper {
     width: 100%;
     height: 250px;
-    background: #232323;
 }
 @media only screen and (max-width: 1200px) {
     .project-detail__interview-video-wrapper {

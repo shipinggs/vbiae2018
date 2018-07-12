@@ -352,7 +352,7 @@ export const PROJECTS: Project[] = [
         client: "National Library Board",
         quote: "No more free space? We learn in the mall.",
         subquote: "...learn in the mall",
-        description: "We conceived a more engaging public library in a shopping mall, using design-thinking to study the needs and interests of library users and the community.",
+        description: "We conceived a more engaging public library in a shopping mall, using design -thinking to study the needs and interests of library users and the community.",
         atmosphericLeftUrl: "https://www.youtube.com/watch?v=Iw1Y5pyOBxQ",
         atmosphericRightUrl: "https://www.youtube.com/watch?v=mr07YeqlwTg",
         lowResHeaderImage: "/assets/projects/lbo/head.jpg",
