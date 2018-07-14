@@ -5,6 +5,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import { HomeComponent } from './home/home.component';
 import { PavilionComponent } from './pavilion/pavilion.component';
 import { EventsComponent } from './events/events.component';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import { CuratorsComponent } from './curators/curators.component';
 import { CommissionersComponent } from './commissioners/commissioners.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'curators', component: CuratorsComponent },
   { path: 'pavilion', component: PavilionComponent },
   { path: 'events', component: EventsComponent },
+  { path: 'events/:tag', component: EventDetailComponent },
   { path: 'press', component: PressComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },

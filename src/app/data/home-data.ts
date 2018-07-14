@@ -119,7 +119,7 @@ export const CAROUSEL_IMAGES: CarouselImage[] = [
         creator: "",
         description: "",
         redirectUrl: "",
-        veryHighResImagePath: "/assets/home-carousel/banner-2880w.jpg",
+        veryHighResImagePath: "/assets/home-carousel/banner-1920w.jpg",
         highResImagePath: "/assets/home-carousel/banner-1920w.jpg",
         mediumResImagePath: "/assets/home-carousel/banner-1440w.jpg",
         lowResImagePath: "/assets/home-carousel/banner-1200w.jpg",

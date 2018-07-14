@@ -10,7 +10,7 @@ import { EmbedVideo } from 'ngx-embed-video';
 import { NgsRevealModule } from 'ng-scrollreveal';
 import { NgsRevealConfig } from 'ng-scrollreveal';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
-
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -37,6 +37,8 @@ import { CuratorsComponent } from './curators/curators.component';
 import { CommissionersComponent } from './commissioners/commissioners.component';
 import { PressComponent } from './press/press.component';
 import { ProjectMiniComponent } from './project-mini/project-mini.component';
+import { EventService } from './event.service';
+import { EventDetailComponent } from './event-detail/event-detail.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,8 @@ import { ProjectMiniComponent } from './project-mini/project-mini.component';
     CuratorsComponent,
     CommissionersComponent,
     PressComponent,
-    ProjectMiniComponent
+    ProjectMiniComponent,
+    EventDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +72,8 @@ import { ProjectMiniComponent } from './project-mini/project-mini.component';
     HttpModule,
     EmbedVideo.forRoot(),
     NgsRevealModule.forRoot(),
-    LazyLoadImageModule
+    LazyLoadImageModule,
+    AngularFontAwesomeModule
   ],
   providers: [
     ProjectService,
@@ -78,6 +82,7 @@ import { ProjectMiniComponent } from './project-mini/project-mini.component';
     HomeCarouselService,
     ContactService,
     ConversationService,
+    EventService,
     NgbTabsetConfig
   ],
   bootstrap: [AppComponent]
