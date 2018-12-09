@@ -11,7 +11,21 @@ export const PAVILION: Project[] = [
         client: "",
         quote: "",
         subquote: "",
-        description: "The Pavilion’s centrepiece features a multi-sensory installation, a suspended transparent cloud made of handcrafted acrylic knots. The cloud is programmed to transmit light from above, shifting in colour and intensity to complement projected videos of Singapore’s built environment below. By trapping, bending and transmitting, the cloud creates an immersive environment and is a visual spectacle.\n\nComplete with lights, scent, sounds, and images of Singapore, the pavilion invites visitors to experience the spaces within the cloud and interact with the installation through a series of scented, translucent ceramic end-pieces that glow when they sense proximity.\n\nThe pavilion is an example of a resourceful, unexpected free space, designed to reach beyond physical constraints and instead, engage with the qualities of space-making that celebrate generosity and humanity through our senses.",
+        description: "<b><i>No More Free Space?</i></b> &nbsp; tells the story of how, in spite of the lack of free space, Singapore-based architects,\
+        urban planners and place-makers have creatively found ways to bring delightful free spaces to the city’s everyday life.\
+        \n\nThe exhibition, which marks the country’s sixth showcase at the International Architecture Exhibition of La Biennale di\
+        Venezia, since 2004, celebrates how architects and planners have innovated and borrowed from nature to create useful and\
+        delightful spaces and places.\n\nSet against the backdrop of Singapore’s compact urban environment, the exhibition features\
+        <a href='/projects'><b>12 Singapore-based projects</b></a> that showcase the resourcefulness of the architects, their inspirations\
+        and the realisation of ideas, while borrowing natural resources such as light, air, greenery and water. Each of the 12 projects\
+        featured shows imagination, openness, discovery and resolution to turn constraints into possibilities. The projects also tap\
+        into social capital in order to bring joy and connect people to the larger community.\n\nThe Pavilion’s centrepiece features\
+        an immersive installation, an ethereal cloud made of skilfully handcrafted acrylic knots gently suspended in the vast spaces\
+        of the Sale d’Armi – a venue provided by the National Arts Council. Complete with a multi-sensory projection of lights, sounds\
+        and images of Singapore, the pavilion invites visitors to immerse themselves in the spaces within the cloud and enjoy the multi-sensorial\
+        installation – in itself an example of a resourceful, unexpected free space. The presentation will be restaged in Singapore in\
+        2019 to engage the public about turning Singapore’s physical constraints into possibilities with imagination and creativity.",
+
         atmosphericLeftUrl: "",
         atmosphericRightUrl: "",
         lowResHeaderImage: "",

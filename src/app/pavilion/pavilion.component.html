@@ -4,12 +4,27 @@
         <div class="col-md-12">
             <h1 class="pavilion__static-title">Singapore Pavilion</h1>
             <h1 class="pavilion__moving-title text-green">{{ pavilion.title }}</h1>
-            <p class="multi-lines-text">
-                {{pavilion.description}}
-            </p>
+            <p class="pavilion__description multi-lines-text mt-5" [innerHtml]="pavilion.description" ></p>
         </div>
     </div>
 </div>
 
 <app-gallery [inputClass]="'col-md-12'" [images]="pavilion.images"
 [width]="galleryWidth" [height]="galleryHeight" imageSize="contain"></app-gallery>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-5 text-center">Sponsors</h1>
+
+            <div class="row">
+                
+                <div class="mt-4 col-md-6" *ngFor="let sponsor of sponsors">
+                    <img class="col-6 sponsor__logo" src="{{ sponsor.imageUrl }}" />
+                    <p class="side-spacer multi-lines-text sponsor__text" [innerHtml]="sponsor.text"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

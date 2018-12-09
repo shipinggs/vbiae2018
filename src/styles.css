@@ -71,3 +71,8 @@ img {
 .multi-lines-text {
     white-space: pre-line;
 }
+
+.side-spacer {
+    margin-left: 14px;
+    margin-right: 14px;
+}

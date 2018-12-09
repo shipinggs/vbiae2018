@@ -39,6 +39,7 @@ import { PressComponent } from './press/press.component';
 import { ProjectMiniComponent } from './project-mini/project-mini.component';
 import { EventService } from './event.service';
 import { EventDetailComponent } from './event-detail/event-detail.component';
+import { SponsorService } from './sponsor.service';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { EventDetailComponent } from './event-detail/event-detail.component';
     ContactService,
     ConversationService,
     EventService,
+    SponsorService,
     NgbTabsetConfig
   ],
   bootstrap: [AppComponent]
