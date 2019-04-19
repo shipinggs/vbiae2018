@@ -112,7 +112,7 @@ export const EVENTS: Event[] = [
         location: "Level 3, National Design Centre, Singapore",
         highlight: "",
         snippet: "Usually Usual will be sharing their works with Singapore soil and the process behind preparing 100 handcrafted Jurong ceramic tubes for the biennale. Participants will be introduced to the methods behind processing locally dug clay through a hands-on experience to make their own personal ceramic vessel.",
-        writeup: "Together with the return exhibition of the 16th Venice Biennale Singapore Pavilion, Usually Usual will be sharing their works with Singapore soil and the process behind preparing 100 handcrafted Jurong ceramic tubes for the biennale. Participants will be introduced to the methods behind processing locally dug clay through a hands-on experience to make their own personal ceramic vessel. Works will be fired and ready for collection from Usually Usual Studio 5 weeks after the workshop.\n\nSign up here: <a href='https://uunmfsw.peatix.com'>https://uunmfsw.peatix.com</a>",
+        writeup: "Together with the return exhibition of the 16th Venice Biennale Singapore Pavilion, Usually Usual will be sharing their works with Singapore soil and the process behind preparing 100 handcrafted Jurong ceramic tubes for the biennale. Participants will be introduced to the methods behind processing locally dug clay through a hands-on experience to make their own personal ceramic vessel. Works will be fired and ready for collection from Usually Usual Studio 5 weeks after the workshop.\n\nSign up here: <a class='text-dark-green' href='https://uunmfsw.peatix.com'>https://uunmfsw.peatix.com</a>",
         videoUrl: "",
         images: [
             {
@@ -152,7 +152,21 @@ export const EVENTS: Event[] = [
         <b><i>- Free Play _ Community & Place</i></b>\n \
         <b class='text-dark-green'>Caterpillar’s Cove _ Library@Orchard _ Goodlife! Makan _ Community Living Room</b>\n\n \
         \
-        Free space: a space that is free for people to use. Or in a more egalitarian sense of the word ‘free’, a space that empowers people. Such spaces are often cherished and well loved by its community as they are less deterministic and allows some degree of free play. A preschool that allows children to learn through self-regulated, imaginative play; a public library that encourages users to appropriate how and when they read; a community kitchen where seniors enjoy cooking and serving one another; new types of community spaces at Void Decks that enable flexibility, initiative and better bonding among residents. These projects showcase design by people, design with people, and design for people. By investing in the potential of its people, a space can then build a community.",
+        Free space: a space that is free for people to use. Or in a more egalitarian sense of the word ‘free’, a space that empowers people. Such spaces are often cherished and well loved by its community as they are less deterministic and allows some degree of free play. A preschool that allows children to learn through self-regulated, imaginative play; a public library that encourages users to appropriate how and when they read; a community kitchen where seniors enjoy cooking and serving one another; new types of community spaces at Void Decks that enable flexibility, initiative and better bonding among residents. These projects showcase design by people, design with people, and design for people. By investing in the potential of its people, a space can then build a community.\n\n \
+        \
+        <b>Forum Schedule</b>\n\n \
+        \
+        15 00 Registration\n \
+        15 30 Design Forum Opening\n \
+        16 00 Session 1: Free Elements\n \
+        16 45 Break\n \
+        17 00 Session 2: Free Mind\n \
+        17 45 Break\n \
+        18 00 Session 3: Free Play\n \
+        18 45 Forum Close\n \
+        19 00 Opening Ceremony and Pavilion Light-Up\n\n \
+        \
+        Register here: <a class='text-dark-green' href='https://nmfsdesignforum.peatix.com'>https://nmfsdesignforum.peatix.com</a>",
         videoUrl: "",
         images: [
             {

@@ -23,6 +23,13 @@ export const SINGAPORE_CONTACTS: SingaporeContact[] = [
         email: "Serene_Tan@ura.gov.sg",
         telephone: "D +65 6329 3281"
     },
+    {
+        name: "Cassandra Cheong",
+        department: "Public Relations",
+        company: "Accenzvision",
+        email: "cassandra@accenzvision.com",
+        telephone: ""
+    },    
 ]
 
 export const INTERNATIONAL_CONTACTS: InternationalContact[] = [

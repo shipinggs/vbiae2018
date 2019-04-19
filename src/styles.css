@@ -38,7 +38,11 @@ h5 {
     color:#38D42F
 }
 .text-dark-green {
-    color: #2CA925
+    color: #2CA925;
+}
+a.text-dark-green {
+    font-weight: bolder;
+    text-decoration: none;
 }
 .text-red {
     color: #d62d20;
@@ -108,6 +112,10 @@ img {
 }
 .container {
     margin: 36px auto;
+}
+.wrapper-container {
+    min-height: 100vh;
+    margin-bottom: -218px; 
 }
 .multi-lines-text {
     white-space: pre-line;
