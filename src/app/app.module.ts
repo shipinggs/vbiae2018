@@ -40,6 +40,7 @@ import { ProjectMiniComponent } from './project-mini/project-mini.component';
 import { EventService } from './event.service';
 import { EventDetailComponent } from './event-detail/event-detail.component';
 import { SponsorService } from './sponsor.service';
+import { AcknowledgementGroupService } from './acknowledgement-group.service';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,7 @@ import { SponsorService } from './sponsor.service';
     CommissionersComponent,
     PressComponent,
     ProjectMiniComponent,
-    EventDetailComponent
+    EventDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -74,7 +75,7 @@ import { SponsorService } from './sponsor.service';
     EmbedVideo.forRoot(),
     NgsRevealModule.forRoot(),
     LazyLoadImageModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
   ],
   providers: [
     ProjectService,
@@ -85,7 +86,8 @@ import { SponsorService } from './sponsor.service';
     ConversationService,
     EventService,
     SponsorService,
-    NgbTabsetConfig
+    AcknowledgementGroupService,
+    NgbTabsetConfig,
   ],
   bootstrap: [AppComponent]
 })

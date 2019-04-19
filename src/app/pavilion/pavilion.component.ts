@@ -4,6 +4,8 @@ import { Sponsor } from '../sponsor';
 
 import { ProjectService } from '../project.service';
 import { SponsorService } from '../sponsor.service';
+import { AcknowledgementGroupService } from '../acknowledgement-group.service';
+import { AcknowledgementGroup } from '../acknowledgement-group';
 
 @Component({
   selector: 'app-pavilion',
@@ -12,18 +14,22 @@ import { SponsorService } from '../sponsor.service';
 })
 export class PavilionComponent implements OnInit {
 
-  pavilion: Project;
-  sponsors: Sponsor[];
-  galleryWidth: string = "100%";
-  galleryHeight: string = "750px";
+  pavilion:               Project;
+  sponsors:               Sponsor[];
+  acknowledgementGroups: AcknowledgementGroup[][];
+  galleryWidth:           string = "100%";
+  galleryHeight:          string = "750px";
 
   constructor(
     private projectService: ProjectService, 
-    private sponsorService: SponsorService ) { }
+    private sponsorService: SponsorService,
+    private acknowledgementGroupService: AcknowledgementGroupService
+  ) { }
 
   ngOnInit() {
     this.getPavilion();
     this.getSponsors();
+    this.getAcknowledgementGroups();
   }
 
   getPavilion(): void {
@@ -37,4 +43,11 @@ export class PavilionComponent implements OnInit {
       .subscribe(sponsors => this.sponsors = sponsors);
   }
 
+  getAcknowledgementGroups(): void {
+    this.acknowledgementGroupService.getAcknowledgementGroups()
+      .subscribe(acknowledgementGroups => {
+        this.acknowledgementGroups = acknowledgementGroups;
+      });
+        
+  }
 }

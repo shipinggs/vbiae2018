@@ -35,13 +35,34 @@ h5 {
     font-weight: lighter;
 }
 .text-green {
-    color:#38d42f
+    color:#38D42F
+}
+.text-dark-green {
+    color: #2CA925
 }
 .text-red {
     color: #d62d20;
 }
 .text-blue {
     color: #0057e7;
+}
+.text-black {
+    color: #000000;
+}
+.text-gray {
+    color: #808080;
+}
+.text-dark-gray {
+    color: #696969;
+}
+.text-darker-gray {
+    color: #454545;
+}
+.text-darkest-gray {
+    color: #282828;
+}
+.font-weight-boldest {
+    font-weight: 900 !important;
 }
 html {
     height: 100%;
@@ -56,6 +77,26 @@ body {
 @media only screen and (max-width: 768px) {
     body {
         padding-top: 59px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    p, span, em {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 1em;
+    }
+    h5 {
+        font-size: 1em;
     }
 }
 img {

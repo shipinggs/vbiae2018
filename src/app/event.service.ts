@@ -12,11 +12,12 @@ export class EventService {
 
   getPastEvents(): Observable<Event[]> {
     return of(EVENTS.sort((a,b) => {
-      if (a.endDate > b.endDate) {
-        console.log(a.endDate, b.endDate);
+      let endDateA = a.endDate || a.startDate
+      let endDateB = b.endDate || b.startDate
+      if (endDateA > endDateB) {
         return 1;
       }
-      if (a.endDate < b.endDate) {
+      if (endDateA < endDateB) {
         return -1;
       }
       return 0;

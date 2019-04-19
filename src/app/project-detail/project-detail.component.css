@@ -46,6 +46,9 @@
 .project-conversation__party {
     text-align: left;
 }
+.project-conversation__party-name {
+    font-size: 1em;
+}
 @media only screen and (max-width: 600px) {
     .project-conversation__party {
         text-align: left;

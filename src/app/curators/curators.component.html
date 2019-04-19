@@ -5,13 +5,14 @@
       </div>
   </div>
 
-  <div [ngsReveal]="{distance:'0px',viewFactor:0.35}" class="curator row" *ngFor="let curator of curators">
-      <div class="col-5 col-sm-3 col-md-2">
-          <img class="curator-image" src={{curator.imageUrl}} alt="">
+  <div ngsReveal class="curator row" *ngFor="let curator of curators">
+      <div class="col-6 col-sm-3 offset-md-0 col-md-2">
+          <img class="curator__image mb-4" src={{curator.imageUrl}} alt="">
       </div>
       <div class="col-sm-9 col-md-10">
-          <h2 class="text-green curator-name mb-3">{{ curator.name }}</h2><h2 [ngsReveal]="{distance:'36px',origin:'left',delay:300}" class="curator-title">{{curator.title}}</h2>
-          <p class="multi-lines-text">{{ curator.text }}</p>
+          <h3 class="text-dark-green curator__name font-weight-bold">{{ curator.name }}</h3>
+          <h4 class="curator__title text-darker-gray font-weight-boldest mt-3">{{curator.title}}</h4>
+          <p class="multi-lines-text curator__text mt-3" [innerHtml]="curator.text"></p>
       </div>
       
   </div>

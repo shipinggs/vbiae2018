@@ -6,6 +6,8 @@
 
 .carousel__banner-container {
     position: relative;
+    margin-top: -59px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -41,11 +43,12 @@
 
 @media only screen and (max-width: 600px) {
     .carousel__banner-container {
-        height: 560px;
+        margin-top: -59px;
+        height: 100vh;
     }
     .carousel__lockup {
         width: 98%;
-        bottom: 2%;
+        bottom: 4%;
         left: 0;
     }
 }

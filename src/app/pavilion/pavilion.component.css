@@ -5,10 +5,5 @@
 }
 
 .pavilion__description ::ng-deep a {
-    color: #38d42f;
     text-decoration: none;
-}
-
-.pavilion__description ::ng-deep a:hover {
-    color: #18a40f;
 }

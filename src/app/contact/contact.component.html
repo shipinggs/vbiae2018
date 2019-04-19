@@ -6,15 +6,15 @@
     </div>
     <div class="row mt-5 mb-3">
         <div class="col-md-12">
-            <h2>Singapore:</h2>
+            <h2 class="font-weight-bold">Singapore</h2>
         </div>
     </div>
     <div class="row" *ngFor="let contact of singaporeContacts">
         <div class="col-md-12">
-            <h3>{{ contact.name }}</h3>
+            <h4 class="font-weight-bold text-darker-gray">{{ contact.name }}</h4>
             <p class="font-weight-light">{{ contact.department }}<br>
                 {{ contact.company }}<br>
-                E: <a class="contact__email-address" href="mailto: {{contact.email}}">{{ contact.email }}</a><br>
+                E: <a class="contact__email-address font-weight-boldest text-dark-green" href="mailto: {{contact.email}}">{{ contact.email }}</a><br>
                 {{ contact.telephone }}
             </p>
         </div>
@@ -22,7 +22,7 @@
 
     <div class="row mt-5 mb-3">
         <div class="col-md-12">
-            <h2>International:</h2>
+            <h2 class="font-weight-bold mb-3">International</h2>
             <p class="font-weight-light">{{ internationalContacts[0].company }}<br>
                 {{ internationalContacts[0].telephone }}
             </p>
@@ -30,9 +30,9 @@
     </div>
     <div class="row" *ngFor="let contact of internationalContacts">
         <div class="col-md-12">
-            <h3>{{ contact.name }}</h3>
+            <h4 class="font-weight-bold text-darker-gray">{{ contact.name }}</h4>
             <p class="font-weight-light">{{ contact.title }}<br>
-                E: <a class="contact__email-address" href="mailto: {{contact.email}}">{{ contact.email }}</a>
+                E: <a class="contact__email-address font-weight-boldest text-dark-green" href="mailto: {{contact.email}}">{{ contact.email }}</a>
             </p>
         </div>
     </div>

@@ -5,13 +5,14 @@
       </div>
   </div>
           
-  <div class="commissioner row mb-5" *ngFor="let commissioner of commissioners">
-      <div [ngsReveal]="{distance:'0px'}" class="col-sm-7">
+  <div ngsReveal class="commissioner row mb-5" *ngFor="let commissioner of commissioners">
+      <div class="col-sm-7">
           <img class="commissioner-image" src={{commissioner.imageUrl}} alt="">
       </div>
-      <div [ngsReveal]="{distance:'0px'}" class="col-sm-12">
-            <h2 class="text-green commissioner-name mb-3">{{ commissioner.name }}</h2><h2 [ngsReveal]="{distance:'36px',origin:'left',delay:300}" class="commissioner-title">{{commissioner.title}}</h2>
-          <p class="multi-lines-text">{{ commissioner.text }}</p>
+      <div class="col-sm-12">
+            <h3 class="text-dark-green commissioner-name font-weight-bold">{{ commissioner.name }}</h3>
+            <h4 class="commissioner-title text-darker-gray font-weight-boldest mt-3">{{commissioner.title}}</h4>
+          <p class="multi-lines-text mt-3">{{ commissioner.text }}</p>
       </div>
   </div>
 </div>

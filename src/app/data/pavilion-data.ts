@@ -16,7 +16,7 @@ export const PAVILION: Project[] = [
         \n\nThe exhibition, which marks the country’s sixth showcase at the International Architecture Exhibition of La Biennale di\
         Venezia, since 2004, celebrates how architects and planners have innovated and borrowed from nature to create useful and\
         delightful spaces and places.\n\nSet against the backdrop of Singapore’s compact urban environment, the exhibition features\
-        <a href='/projects'><b>12 Singapore-based projects</b></a> that showcase the resourcefulness of the architects, their inspirations\
+        <a href='/projects' class='text-dark-green'><b>12 Singapore-based projects</b></a> that showcase the resourcefulness of the architects, their inspirations\
         and the realisation of ideas, while borrowing natural resources such as light, air, greenery and water. Each of the 12 projects\
         featured shows imagination, openness, discovery and resolution to turn constraints into possibilities. The projects also tap\
         into social capital in order to bring joy and connect people to the larger community.\n\nThe Pavilion’s centrepiece features\

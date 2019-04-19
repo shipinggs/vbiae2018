@@ -132,7 +132,7 @@ export const CONVERSATIONS: Conversation[] = [
         title: false,
         parties: [
             ['Architect', 'PHUA HONG WEI, SENIOR ARCHITECT OF WOHA ARCHITECTS PTE LTD'],
-            ['Commissioner', 'NG HERK LOW, ASSISTANT CHIEF EXECUTIVEOF SG ENABLE']
+            ['Commissioner', 'NG HERK LOW, ASSISTANT CHIEF EXECUTIVE OF SG ENABLE']
         ],
         segments: [
             {

@@ -38,7 +38,7 @@
 
 .past-events__more-button {
     position: absolute;
-    /* background: #38d42f; */
+    border: none;
     bottom: 0;
     right: 0;
 }

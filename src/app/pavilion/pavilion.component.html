@@ -3,8 +3,8 @@
     <div class="row">
         <div class="col-md-12">
             <h1 class="pavilion__static-title">Singapore Pavilion</h1>
-            <h1 class="pavilion__moving-title text-green">{{ pavilion.title }}</h1>
-            <p class="pavilion__description multi-lines-text mt-5" [innerHtml]="pavilion.description" ></p>
+            <h1 class="pavilion__moving-title text-dark-green">{{ pavilion.title }}</h1>
+            <p ngsReveal class="pavilion__description multi-lines-text mt-5" [innerHtml]="pavilion.description" ></p>
         </div>
     </div>
 </div>
@@ -13,15 +13,38 @@
 [width]="galleryWidth" [height]="galleryHeight" imageSize="contain"></app-gallery>
 
 <div class="container mb-5">
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-md-12">
-            <h1 class="mt-5 text-center">Sponsors</h1>
+            <h1 ngsReveal class="mt-5 text-center">Sponsors</h1>
 
             <div class="row">
                 
-                <div class="mt-4 col-md-6" *ngFor="let sponsor of sponsors">
+                <div ngsReveal class="mt-4 col-md-6" *ngFor="let sponsor of sponsors">
                     <img class="col-6 sponsor__logo" src="{{ sponsor.imageUrl }}" />
                     <p class="side-spacer multi-lines-text sponsor__text" [innerHtml]="sponsor.text"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-12 text-center">
+            <h1 ngsReveal class="mt-5 mb-5 text-center">Acknowledgements</h1>
+
+            <div class="row text-left">
+
+                <div ngsReveal class="col-md-4" *ngFor="let acknowledgementColumn of acknowledgementGroups">
+
+                    <div class="col-md-12 mb-3" *ngFor="let acknowledgementGroup of acknowledgementColumn"> 
+                        <h4 class="font-weight-bold text-darkest-gray">{{ acknowledgementGroup.groupName | uppercase }}</h4>
+                        <div *ngFor="let subGroupData of acknowledgementGroup.groupData">
+                            <h5 class="font-weight-bold text-darker-gray">{{ subGroupData.subGroupName }}</h5>
+                            <h5 *ngFor="let contributor of subGroupData.contributors">
+                                <span class="text-dark-green font-weight-boldest mr-1">{{ contributor.name | uppercase }}</span><span class="text-darker-gray">{{ contributor.description }}</span>
+                            </h5>
+                        </div>
+                    </div>
                 </div>
 
             </div>

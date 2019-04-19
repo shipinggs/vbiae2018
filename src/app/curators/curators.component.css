@@ -3,21 +3,25 @@
     margin-bottom: 60px;
 }
 
-.curator-image {
+.curator__image {
     display: inline-block;
     margin: 0 auto;
     margin-bottom: 12px;
     width: 100%;
+    border-radius: 6px;
 }
 
-.curator-name {
-    display: inline-block;
-    margin-right: 14px;
-    padding-right: 14px;
-    border-right: 2px solid #454545;
-    font-weight: bold;
+.curator__name {
 }
 
-.curator-title {
-    display: inline-block;
+.curator__title {
 }
+
+.curator__text ::ng-deep a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+/* 
+.curator__text ::ng-deep a:hover {
+    color: #18a40f;
+} */
