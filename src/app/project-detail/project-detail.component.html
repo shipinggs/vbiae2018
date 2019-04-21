@@ -5,7 +5,7 @@
             
             <div *ngIf="interview_iframe_html" class="project-detail__interview-video-wrapper" [innerHtml]="interview_iframe_html"></div>
                 
-            <h1 [ngsReveal]="{origin:'left',distance:'50px'}" class="mt-5 mb-5 font-weight-bold text-dark-green">{{ project.quote }}</h1>
+            <h1 [ngsReveal]="{origin:'left',distance:'90px', delay: 1000}" class="mt-5 mb-5 font-weight-bold text-dark-green">{{ project.quote }}</h1>
             
             <h2 class="font-weight-bold project-detail__title">{{ project.title }}</h2>
             <p class="font-weight-light multi-lines-text">By {{ project.creator }}</p>

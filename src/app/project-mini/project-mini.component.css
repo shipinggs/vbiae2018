@@ -108,6 +108,13 @@
         margin-bottom: 0.7em;
     }
 }
+@media only screen and (max-width: 600px) {
+    .project-mini__quote {
+        font-size: 0.9em;
+    }
+}
+
+
 
 .project-mini__title em {
     font-size: 0.9em;

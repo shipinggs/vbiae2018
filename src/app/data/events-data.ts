@@ -112,13 +112,18 @@ export const EVENTS: Event[] = [
         location: "Level 3, National Design Centre, Singapore",
         highlight: "",
         snippet: "Usually Usual will be sharing their works with Singapore soil and the process behind preparing 100 handcrafted Jurong ceramic tubes for the biennale. Participants will be introduced to the methods behind processing locally dug clay through a hands-on experience to make their own personal ceramic vessel.",
-        writeup: "Together with the return exhibition of the 16th Venice Biennale Singapore Pavilion, Usually Usual will be sharing their works with Singapore soil and the process behind preparing 100 handcrafted Jurong ceramic tubes for the biennale. Participants will be introduced to the methods behind processing locally dug clay through a hands-on experience to make their own personal ceramic vessel. Works will be fired and ready for collection from Usually Usual Studio 5 weeks after the workshop.\n\nSign up here: <a class='text-dark-green' href='https://uunmfsw.peatix.com'>https://uunmfsw.peatix.com</a>",
+        writeup: "Together with the return exhibition of the 16th Venice Biennale Singapore Pavilion, Usually Usual will be sharing their works with Singapore soil and the process behind preparing 100 handcrafted Jurong ceramic tubes for the biennale. Participants will be introduced to the methods behind processing locally dug clay through a hands-on experience to make their own personal ceramic vessel. Works will be fired and ready for collection from Usually Usual Studio 5 weeks after the workshop.\n\nSign up here: <a class='text-dark-green' href='https://nmfsclay.peatix.com/'>https://nmfsclay.peatix.com/</a>",
         videoUrl: "",
         images: [
             {
-                small: "/assets/events/exploring-singapore-clay-hand-building-workshop/01-768w.jpg",
-                medium: "/assets/events/exploring-singapore-clay-hand-building-workshop/01-768w.jpg",
-                big: "/assets/events/exploring-singapore-clay-hand-building-workshop/01-768w.jpg"
+                small: "/assets/events/exploring-singapore-clay-hand-building-workshop/01.jpg",
+                medium: "/assets/events/exploring-singapore-clay-hand-building-workshop/01.jpg",
+                big: "/assets/events/exploring-singapore-clay-hand-building-workshop/01.jpg"
+            },
+            {
+                small: "/assets/events/exploring-singapore-clay-hand-building-workshop/02.jpg",
+                medium: "/assets/events/exploring-singapore-clay-hand-building-workshop/02.jpg",
+                big: "/assets/events/exploring-singapore-clay-hand-building-workshop/02.jpg"
             },
         ]
     },
@@ -126,7 +131,7 @@ export const EVENTS: Event[] = [
         title: "No More Free Space? Opening Design Forum",
         tag: "no-more-free-space-opening-design-forum",
         eventUrl: "/events/no-more-free-space-opening-design-forum",
-        startDate: new Date("2019-05-19"),
+        startDate: new Date("2019-05-17"),
         endDate: null,
         location: "Level 2 Auditorium, National Design Centre, Singapore",
         highlight: "",
@@ -139,17 +144,17 @@ export const EVENTS: Event[] = [
         \
         The design forum will be centred around the following themes:\n\n \
         \
-        <b><i>- Free Elements _ Light, Air, Rain & Life</i></b>\n \
+        <b><i>Session 1: Free Elements _ Light, Air, Rain & Life</i></b>\n \
         <b class='text-dark-green'>T House _ Lucky Shophouse _ SkyTerrace@Dawson _ Enabling Village</b>\n\n \
         \
         Nested in the tropics while surrounded by sea, we are blessed with an abundance of daylight, rain and breeze. Here, we shift our focus from constraints to what is freely available around us – the natural elements. The projects selected demonstrate how we can live harmoniously with nature and introduce daylight, natural ventilation and greenery – from a terrace house and a shophouse, to a high-rise apartment and low-rise social service “village” adapted from a former school. Here, architecture goes beyond technical definitions of green and sustainability, as these projects introduce multiple sensorial experiences, material sensibility, biodiversity and vitality into living spaces. \n\n \
         \
-        <b><i>- Free Mind _ Cityscape & Landscape</i></b>\n \
+        <b><i>Session 2: Free Mind _ Cityscape & Landscape</i></b>\n \
         <b class='text-dark-green'>Khoo Teck Puat Hospital _ Bishan - Ang Mo Kio Park _ Henderson Waves _ Alexandra Arch & Forest Walk _ i Light Marina Bay</b>\n\n \
         \
         Finding free space in a densely built-up city is not an easy task but yet it is an important one, as it brings joy and delight, and provides, at times, a tranquil, healing environment to the people. These projects show us that this is possible if we set our minds free. Despite constraints, the architects and planners saw opportunities to weave new landscapes into urban life through bold re-imagination – a storm water canal turned into a free-flowing river meandering through a public park; a hospital becomes a health and recreation destination by borrowing a neighbouring pond; inaccessible hill ridges connected into a linear park in the sky; a reclaimed waterfront transformed into a vibrant public space we now enjoy. The traditional technique of “borrowing landscape” has inspired these projects and gained yet more. While abundance may not seem immediately apparent at these sites, the architects first saw them in their minds and brought them to us.\n\n \
         \
-        <b><i>- Free Play _ Community & Place</i></b>\n \
+        <b><i>Session 3: Free Play _ Community & Place</i></b>\n \
         <b class='text-dark-green'>Caterpillar’s Cove _ Library@Orchard _ Goodlife! Makan _ Community Living Room</b>\n\n \
         \
         Free space: a space that is free for people to use. Or in a more egalitarian sense of the word ‘free’, a space that empowers people. Such spaces are often cherished and well loved by its community as they are less deterministic and allows some degree of free play. A preschool that allows children to learn through self-regulated, imaginative play; a public library that encourages users to appropriate how and when they read; a community kitchen where seniors enjoy cooking and serving one another; new types of community spaces at Void Decks that enable flexibility, initiative and better bonding among residents. These projects showcase design by people, design with people, and design for people. By investing in the potential of its people, a space can then build a community.\n\n \

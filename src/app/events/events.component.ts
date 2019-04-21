@@ -13,11 +13,18 @@ import { NgsRevealModule } from 'ng-scrollreveal'
 export class EventsComponent implements OnInit {
 
   past_events: Event[];
+  upcoming_events: Event[];
 
   constructor(private eventService: EventService) { }
 
   ngOnInit() {
+    this.getUpcomingEvents();
     this.getPastEvents();
+  }
+
+  getUpcomingEvents(): void {
+    this.eventService.getUpcomingEvents()
+      .subscribe(upcoming_events => this.upcoming_events = upcoming_events);
   }
 
   getPastEvents(): void {
