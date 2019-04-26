@@ -23,7 +23,7 @@
     position: absolute;
     margin: 0 auto;
     bottom: 4%;
-    right: 0%;
+    right: 2%;
     width: 74%;
     max-width: 1440px;
     animation: slideInFromBottom 2.5s cubic-bezier(0.185, 0.61, 0.355, 1) 0s 1 normal forwards;
@@ -46,9 +46,10 @@
         height: 91vh;
     }
     .carousel__lockup {
-        width: 100%;
+        width: 96%;
         bottom: 4%;
         left: 0;
+        right: 0;
     }
 }
 
