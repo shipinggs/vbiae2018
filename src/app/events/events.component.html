@@ -1,11 +1,12 @@
 <div class="container events-container">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" *ngIf="upcoming_events.length > 0">
       <h1>Upcoming Events</h1>
     </div>
   </div>
 
-  <div class="row upcoming-events">
+
+  <div class="row upcoming-events" *ngIf="upcoming_events.length > 0">
     <div [ngsReveal]="{ 'scale': 0.98 }" class="events__card-wrapper col-md-4 col-sm-6"
       *ngFor="let event of upcoming_events">
 
@@ -45,6 +46,7 @@
       <h1>Past Events</h1>
     </div>
   </div>
+
 
   <div class="row past-events">
     <div [ngsReveal]="{ 'scale': 0.98 }" class="events__card-wrapper col-md-4 col-sm-6"
